@@ -1,0 +1,90 @@
+﻿<UserControl 
+    x:Class="FirewallApp.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid"
+
+    xmlns:ViewModels="clr-namespace:FirewallApp.ViewModels"
+    xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
+    DataContext="{dxmvvm:ViewModelSource Type=ViewModels:MainViewModel}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+            <dx:SimpleButton Content="Load Firewall Rules" Command="{Binding LoadRulesCommand}" />
+        </StackPanel>
+
+        <dxg:GridControl Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"
+                         SelectionMode="Row"
+                         AutoGenerateColumns="None"
+                         
+                         ItemsSource="{DXBinding 'FirewallRuleCollection', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         SelectedItem="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True">
+
+                    <dxg:TableView.FormatConditions>
+                        <dxg:FormatCondition ValueRule="Equal" Value1="0" FieldName="Enabled" PredefinedFormatName="LightRedFillWithDarkRedText" />
+                    </dxg:TableView.FormatConditions>
+
+                </dxg:TableView>
+            </dxg:GridControl.View>
+
+            <dxg:GridColumn FieldName="DisplayName" SortOrder="Ascending"></dxg:GridColumn>
+            <dxg:GridColumn FieldName="Direction"></dxg:GridColumn>
+            <dxg:GridColumn FieldName="Enabled"></dxg:GridColumn>
+
+        </dxg:GridControl>
+
+
+        <dxprg:PropertyGridControl Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                   ShowCategories="Hidden">
+
+            <dxprg:PropertyGridControl.PropertyDefinitions>
+
+                <dxprg:PropertyDefinition Path="DisplayName" Header="DisplayName">
+                    <dxprg:PropertyDefinition.EditSettings>
+                        <dxe:TextEditSettings />
+                    </dxprg:PropertyDefinition.EditSettings>
+                </dxprg:PropertyDefinition>
+
+                <dxprg:PropertyDefinition Path="Direction" Header="Direction"></dxprg:PropertyDefinition>
+
+                <dxprg:PropertyDefinition Path="Enabled" Header="Enabled">
+
+                    <dxprg:PropertyDefinition.EditSettings>
+                        <dxe:ToggleSwitchEditSettings CheckedStateContent="On" UncheckedStateContent="Off"/>
+                    </dxprg:PropertyDefinition.EditSettings>
+                </dxprg:PropertyDefinition>
+
+
+
+            </dxprg:PropertyGridControl.PropertyDefinitions>
+        </dxprg:PropertyGridControl>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+            <dx:SimpleButton Content="Commit" Command="{Binding CommitRuleCommand}" />
+        </StackPanel>
+
+    </Grid>
+</UserControl>
