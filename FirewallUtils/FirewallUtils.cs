@@ -7,6 +7,7 @@ using System.Management.Automation;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Diagnostics;
+using System.IO;
 
 namespace FirewallUtils
 {
@@ -52,8 +53,33 @@ namespace FirewallUtils
             return result.IsSuccess;
         }
 
+        public async Task<Collection<Rule>> GetNetPortFilter(string p_DisplayName)
+        {
+            var result = await RunPsTask("Get-NetFirewallRule -DisplayName '" + p_DisplayName + "' | Get-NetFirewallPortFilter");
+
+            foreach (var obj in result.psObjs)
+            {
+                foreach (var p in obj.Properties)
+                {
+                    if(p.Value != null)
+                        Debug.WriteLine(p.Name + ": " + p.Value.ToString());
+                    if (p.Name == "LocalPort")
+                    {
+                        var _val = (string[]) p.Value;
+                        foreach (var v in _val)
+                        {
+                            Debug.WriteLine("----------------- " + v.ToString());
+                        }
+                    }
+                }
+            }
 
 
+
+
+            return GetRuleCollection(result.psObjs);
+        }
+        
         ///---------------------------------------------
         ///
         ///
@@ -71,7 +97,7 @@ namespace FirewallUtils
                 var props = obj.Properties;
                 var rule = new Rule()
                 {
-                    ElementName = props["ElementName"].Value.ToString(),
+
                     DisplayName = props["DisplayName"].Value.ToString(),
                     Description = (props["Description"].Value != null) ? props["Description"].Value.ToString() : String.Empty
                 };
@@ -81,6 +107,9 @@ namespace FirewallUtils
                 rule.Enabled = (ushort.Parse(props["Enabled"].Value.ToString()) == 1);
 
                 fCollection.Add(rule);
+
+
+
             }
 
             return fCollection;

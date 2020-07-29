@@ -7,7 +7,7 @@ namespace FirewallUtils
 {
     public class Rule
     {
-        public string ElementName = String.Empty;
+        public string jSonObj;
         public string DisplayName = String.Empty;
         public string Description = String.Empty;
         public Direction Direction;
@@ -23,6 +23,11 @@ namespace FirewallUtils
         public async Task Disable()
         {
             await utils.DisableRule(this.DisplayName);
+        }
+
+        public async Task GetPorts()
+        {
+            await utils.GetNetPortFilter(this.DisplayName);
         }
     }
 

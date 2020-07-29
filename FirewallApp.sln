@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirewallApp", "FirewallApp\FirewallApp.csproj", "{2A6DE3B8-241D-4BA1-ADB0-B957AFD5DE08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallEngine", "..\FirewallEngine\FirewallEngine\FirewallEngine.csproj", "{88034354-B5B0-4C68-9CEE-DCF62EC89ABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirewallUtils", "FirewallUtils\FirewallUtils.csproj", "{651DCE64-D602-482D-BF82-F2056E089DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallApp", "FirewallApp\FirewallApp.csproj", "{238ECA2D-1329-478B-9CDF-432966981F44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A6DE3B8-241D-4BA1-ADB0-B957AFD5DE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A6DE3B8-241D-4BA1-ADB0-B957AFD5DE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A6DE3B8-241D-4BA1-ADB0-B957AFD5DE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A6DE3B8-241D-4BA1-ADB0-B957AFD5DE08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{651DCE64-D602-482D-BF82-F2056E089DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{651DCE64-D602-482D-BF82-F2056E089DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{651DCE64-D602-482D-BF82-F2056E089DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{651DCE64-D602-482D-BF82-F2056E089DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88034354-B5B0-4C68-9CEE-DCF62EC89ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88034354-B5B0-4C68-9CEE-DCF62EC89ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88034354-B5B0-4C68-9CEE-DCF62EC89ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88034354-B5B0-4C68-9CEE-DCF62EC89ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238ECA2D-1329-478B-9CDF-432966981F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238ECA2D-1329-478B-9CDF-432966981F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238ECA2D-1329-478B-9CDF-432966981F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238ECA2D-1329-478B-9CDF-432966981F44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

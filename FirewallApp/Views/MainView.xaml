@@ -70,13 +70,7 @@
 
                 <dxprg:PropertyDefinition Path="Direction" Header="Direction"></dxprg:PropertyDefinition>
 
-                <dxprg:PropertyDefinition Path="Enabled" Header="Enabled">
-
-                    <dxprg:PropertyDefinition.EditSettings>
-                        <dxe:ToggleSwitchEditSettings CheckedStateContent="On" UncheckedStateContent="Off"/>
-                    </dxprg:PropertyDefinition.EditSettings>
-                </dxprg:PropertyDefinition>
-
+                
 
 
             </dxprg:PropertyGridControl.PropertyDefinitions>
@@ -84,6 +78,8 @@
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
             <dx:SimpleButton Content="Commit" Command="{Binding CommitRuleCommand}" />
+            <dx:SimpleButton Content="Enable" Command="{Binding EnableRuleCommand}"/>
+            <dx:SimpleButton Content="Disable" Command="{Binding DisableRuleCommand}" />
         </StackPanel>
 
     </Grid>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="54d49fa9-20ae-47ee-8ea4-2019c7d5deb8" namespace="FirewallApp.Data" dataBaseShemaInfo="H4sIAAAAAAAEAMVWyW7bMBC9F+g/CD6HlrhIogNZQeMsCNoGQZaiVy5DW60sGaJkO39fyltiJ+mCGvFNfPMGnEe+ESc5mY9zbwqVzcqi38HdoHOSfvyQnAoLd3VZiSFcFab0HKuwx3Ob9Tujup4c+/5sNuvOaLeshj4JAux///rlTo1gLFBW2FoUCjqbLP3nrI7b1fOSeyFzsO2Wi/UaeQasoWsxhvQiq2Am8vy2ySHxn/AN9bxosbSuGhdfLTbBs8y2wMNEixpSI3LrSNvghnvZZPpKpzQETWKqkaQYI9ZjEZIxwYjTnmEB6RFJeOKvyJvkQZk348JuqXgTdoFWwzKYunImuXhskcR/hm/xf6fyX5U+VwsaxwozjigoQAxHEeKGMESx5DFwTDQ1L9S6dP+/BFegaufG95crVBQLbhQynFPEgrCHODExYrFTqjFgAmzfcq/LGuz7S9UmDpXU7ioFjRALiURcBRwFJsIxE1wGcu9Sl+Xr9xcbuWaNoh5FlMYGMc4NEgwE0qEJImfkSHK5b7E/7CEcfIhrPQOrqmxymJYNBOGgdNujVLiWdVoliTEixrUr1SaMMN27j3MYQ1Ef5pcckIj2MChEQykRYypGQsQSacAyjFnIQo7/WvBr6OoZ3SCr9RMlaecC0DdVqRag5y/hb8shwvlhej6fVGBt90zUojslQRcfeatwv111WTc48gZNXjcV9Ato6krkR95NI/NMfYbH+/InFH3JuXt/QqbjIADWE4m/3mKx3yAX1oJtL6B9/tflf9KuNDDZfFXXErprzBZ0C+NyCrvEJbrLHbhZKH0o1EgUw/b3tVgvj+a1GhJ3MhOo6uzAtb1RRnIJBVTOXoNy3NrYrjz6At4iuybPhu7zInNW2MnYji3Srps8b11zCiMxzcrKmcIId92uX3Yjbtj0d6bN9BdgutTqlgoAAA==" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="SandboxDbConn" createdInVersion="20.1.4.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="true" lastModifiedInVersion="20.1.4.0" name="Sandbox" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="54d49fa9-20ae-47ee-8ea4-2019c7d5deb8" namespace="FirewallApp.Data" dataBaseShemaInfo="H4sIAAAAAAAEAMVX227bOBB9L7D/YPg5tHgTSRW2i63TFkW7QdC0i77yMnS0lSVDFzv9+x3Zjhu7ty3Wjd/EMzPgHM0ZkjN+drcoBiuom7wqJ0M2osNn0z+ejJ/bBm7aqrZzeF3GaoBeZfP0rsknw9u2XT5NkvV6PVqLUVXPE04pSz7+9fbG38LCkrxsWlt6GO6jws+jhrjrYDB+b10BTb/lZn2PPADuoSu7gOnLvIa1LYp3XQHj5Au+d31R9ti0rTu07xZ742Xe9MCHZbAtTKMtGnQ6BPe+r7o8vA5TkULgWgTiBGNEZlIRpzkjRmRRUp5xx8042Tnvg2dV0S3K5oDFd2E09By2ximmsyzs5x4ZJw/wA/8fsfxVpg/ZQmDaM2mIAA9EMqWIiVwSwZzRYBgPIn7FFsOT/0W4Bt+iGh+frvVKWxM9icYIImmaEcOjJlIj08CAcZCnpntVtdA8PtUQdepdwFJaoYhMuSPGU0NoVExLaxx1J6e6TT88PlmFzapUJogQOhJpTCRWgiUhjVShkJUz7tRk/2nOoeBzlPUSGl/ny/O0LLXcgA99jwqLLYtcHdeM8IjtKkJMFRMn13EBCyjb8xzJlCuRMfBEpM4RKb0m1mpHAjCXapnK1LBTE76uq3ltF49PlqUBpE0VCVR4Ip3GezcTlPjURpFqABv1qcm+rbwt/gyhhuYM5zIH5VHEGckyG4jkDvVs8AJ2SqWeR8dR1r+F8XVVt+c4mVnmA162wLwhMoIiGTVAqOaOgg7OZien+w4WeOeercKOBqe1UyTSiJS1pSRLFSdgrZDAU+Z19nson6fEIXjpQab4hkSW0mM3uyA0ARFpf1hBCPY/8/0Wunv375Hd+ovLuB9kIOAp5jfgINnCf2+nHrzAVi/ulr0aRpe2taMVpyN2MdiZJ/1qJEf0YjDrirarYVJC19a2uBhcd67I/Rv4/L76BOXEGYMP5lQGTSnIDGndb7HZb1bYpoGmL0A/r9ynj0q8riHmd7u8ttBNFw+gvoQrOHbcose+Mxzeph9Kf2vLef/e2qy3v+ZbOYzxzyyhbvMz5/adNMavoIQa5TWrFv292+w0+hV84IyvknyOny9zlMJRxKFtE3bVFUWvmudwa1d5VaMoosVyY78cW3A6To7G4+m/c9DezEcPAAA=" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="SandboxDbConn" createdInVersion="20.1.4.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="true" lastModifiedInVersion="20.1.4.0" name="Sandbox" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
   <classes>
     <dataBaseObjectModelHasClasses Id="92b43c6e-5023-4456-967e-803f938c2b70">
       <xpObject Id="35ed273d-b311-4946-b721-839f40292b28" name="FirewallRule" baseClass="XPObject" userFileName="FirewallRule" designerFileName="FirewallRule.Designer" className="FirewallRule" virtualName="FirewallRule">
@@ -17,7 +17,22 @@
             <field Id="ac67a8fc-f883-4059-82f7-4712dd1e12e4" name="Direction" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="48632a8b-2f9b-4a37-8ba7-a019e0228a6e">
-            <field Id="6b316693-337f-488f-a4ea-d5f0687e6b8b" name="Enabled" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+            <field Id="6b316693-337f-488f-a4ea-d5f0687e6b8b" name="Enabled" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1f42e03d-60f5-4a3d-a300-5558d89c6276">
+            <field Id="15de4a56-d03c-4b7d-b930-c5af357eeaf7" name="Program" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c8af79af-4d50-4c2d-bb6d-66faa39fb396">
+            <field Id="2e6c0089-99ad-42b8-b848-b665c2fb21e1" name="LocalAddress" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6c0452e6-8c47-4ae7-9f04-140f3e98df85">
+            <field Id="6b19cd83-e1c8-4fe6-908e-072b0e7dba91" name="LocalPort" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b8e95889-d389-4d57-884d-42cb1a0ffb6c">
+            <field Id="b0db77b6-f0f8-47a0-9562-eaa34e251c79" name="RemoteAddress" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="94296aa4-af8a-4900-93a3-c7f9fb9ee760">
+            <field Id="ddc4ce45-3e62-4c56-bd37-e3f04581edda" name="RemotePort" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
       </xpObject>

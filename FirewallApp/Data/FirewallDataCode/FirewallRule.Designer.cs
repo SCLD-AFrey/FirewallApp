@@ -42,11 +42,41 @@ namespace FirewallApp.Data
             get { return fDirection; }
             set { SetPropertyValue<string>(nameof(Direction), ref fDirection, value); }
         }
-        bool fEnabled;
-        public bool Enabled
+        string fEnabled;
+        public string Enabled
         {
             get { return fEnabled; }
-            set { SetPropertyValue<bool>(nameof(Enabled), ref fEnabled, value); }
+            set { SetPropertyValue<string>(nameof(Enabled), ref fEnabled, value); }
+        }
+        string fProgram;
+        public string Program
+        {
+            get { return fProgram; }
+            set { SetPropertyValue<string>(nameof(Program), ref fProgram, value); }
+        }
+        string fLocalAddress;
+        public string LocalAddress
+        {
+            get { return fLocalAddress; }
+            set { SetPropertyValue<string>(nameof(LocalAddress), ref fLocalAddress, value); }
+        }
+        string fLocalPort;
+        public string LocalPort
+        {
+            get { return fLocalPort; }
+            set { SetPropertyValue<string>(nameof(LocalPort), ref fLocalPort, value); }
+        }
+        string fRemoteAddress;
+        public string RemoteAddress
+        {
+            get { return fRemoteAddress; }
+            set { SetPropertyValue<string>(nameof(RemoteAddress), ref fRemoteAddress, value); }
+        }
+        string fRemotePort;
+        public string RemotePort
+        {
+            get { return fRemotePort; }
+            set { SetPropertyValue<string>(nameof(RemotePort), ref fRemotePort, value); }
         }
     }
 
