@@ -1,12 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Xpo;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
 using System.Threading.Tasks;
 using DevExpress.CodeParser;
 using FirewallEngine;
+
 
 namespace FirewallApp.ViewModels
 {
@@ -18,10 +21,9 @@ namespace FirewallApp.ViewModels
             void IMetadataProvider<RulesViewModel>.BuildMetadata
                 (MetadataBuilder<RulesViewModel> p_builder)
             {
-                p_builder.CommandFromMethod(p_x => p_x.OnLoadRulesCommand()).CommandName("LoadRulesCommand");
-                p_builder.CommandFromMethod(p_x => p_x.OnCommitRuleCommand()).CommandName("CommitRuleCommand");
-                p_builder.CommandFromMethod(p_x => p_x.OnEnableRuleCommand()).CommandName("EnableRuleCommand");
-                p_builder.CommandFromMethod(p_x => p_x.OnDisableRuleCommand()).CommandName("DisableRuleCommand");
+
+                p_builder.CommandFromMethod(p_x => p_x.OnBuildPsScriptCommand()).CommandName("BuildPsScriptCommand");
+                p_builder.CommandFromMethod(p_x => p_x.OnRunPsScriptCommand()).CommandName("RunPsScriptCommand()");
                 p_builder.Property(p_x => p_x.SelectedRule).OnPropertyChangedCall(p_x => p_x.OnSelectedRuleChangedCommand());
             }
         }
@@ -30,11 +32,10 @@ namespace FirewallApp.ViewModels
 
         protected RulesViewModel()
         {
-            uow = new UnitOfWork();
-            fUtilities = new FirewallUtilities();
-            RuleCollection = new ObservableCollection<Rule>();
+            OutputText = "";
+            fUtils = new FirewallUtilities();
+            GetRules();
 
-            OnLoadRulesCommand();
         }
 
         public static RulesViewModel Create()
@@ -46,54 +47,56 @@ namespace FirewallApp.ViewModels
 
         #region Fields and Properties
 
-        public virtual FirewallUtilities fUtilities { get; set; }
-        public virtual UnitOfWork uow { get; set; }
-        public virtual Rule SelectedRule { get; set; }
+
+        public virtual FirewallUtilities fUtils { get; set; }
         public virtual ObservableCollection<Rule> RuleCollection { get; set; }
+        public virtual Rule SelectedRule { get; set; }
+        public virtual string OutputText { get; set; }
+        public virtual bool IsEditEnabled { get; set; } = false;
 
         #endregion
 
         #region Methods
-        public async void OnLoadRulesCommand()
+
+        private async void GetRules()
         {
-            await fUtilities.SetExecutionPolicy();
-            var result = await fUtilities.GetFirewallRule();
+            await fUtils.SetExecutionPolicy();
+            var resultObjs = await fUtils.GetFirewallRule();
+            RuleCollection = await fUtils.CreateRuleCollection(resultObjs);
+        }
+        public async void OnBuildPsScriptCommand()
+        {
+            var pShellBld = new StringBuilder("Set-NetFirewallRule -DisplayName '" + SelectedRule.DisplayName + "'");
+            if(SelectedRule.Enabled == Enumerations.Enabled.Enabled)
+            {
+                pShellBld.Append(" ").Append("-Enabled True");
+            }
+            else
+            {
+                pShellBld.Append(" ").Append("Enabled Disabled");
+            }
+            pShellBld.Append(" ").Append(String.Format("-Action {0}", SelectedRule.Action.ToString()));
 
-            var RuleCollection = await fUtilities.CreateRuleCollection(result);
-
-
+            var shellScript = pShellBld.ToString();
+            OutputText = shellScript;
         }
 
-        public async void OnCommitRuleCommand()
+        public async void OnRunPsScriptCommand()
         {
-            //await fUtilities.SetEnabled(
-            //    SelectedRule.DisplayName, 
-            //    SelectedRule.Enabled
-            //    );
-
+            IsEditEnabled = false;
+            await fUtils.SetExecutionPolicy();
+            var result = await PowershellTools.RunScript(OutputText);
+            OutputText = "Script Completed - " + result.IsSuccess.ToString();
+            IsEditEnabled = true;
         }
 
         public async void OnSelectedRuleChangedCommand()
         {
+            OutputText = String.Empty;
+            IsEditEnabled = false;
             await SelectedRule.GetAdditionalInfo();
-
-
+            IsEditEnabled = true;
         }
-
-        public async void OnEnableRuleCommand()
-        {
-            SelectedRule.Enabled = Enumerations.Enabled.Enabled;
-            await fUtilities.EnableRule(this.SelectedRule.DisplayName);
-            OnLoadRulesCommand();
-        }
-
-        public async void OnDisableRuleCommand()
-        {
-            SelectedRule.Enabled = Enumerations.Enabled.Disabled;
-            await fUtilities.DisableRule(this.SelectedRule.DisplayName);
-            OnLoadRulesCommand();
-        }
-
         #endregion
     }
 }

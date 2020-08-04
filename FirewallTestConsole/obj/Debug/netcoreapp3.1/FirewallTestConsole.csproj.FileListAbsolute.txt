@@ -1,0 +1,4 @@
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallTestConsole\obj\Debug\netcoreapp3.1\FirewallTestConsole.csprojAssemblyReference.cache
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallTestConsole\obj\Debug\netcoreapp3.1\FirewallTestConsole.csproj.CoreCompileInputs.cache
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallTestConsole\obj\Debug\netcoreapp3.1\FirewallTestConsole.AssemblyInfoInputs.cache
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallTestConsole\obj\Debug\netcoreapp3.1\FirewallTestConsole.AssemblyInfo.cs

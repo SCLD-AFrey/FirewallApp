@@ -23,6 +23,7 @@
             <RowDefinition Height="22"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
@@ -31,24 +32,18 @@
 
         <dxg:GridControl Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"
                          SelectionMode="Row"
-                         AutoGenerateColumns="AddNew"
+                         AutoGenerateColumns="None"
                          
                          ItemsSource="{DXBinding 'RuleCollection', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                          SelectedItem="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
             <dxg:GridControl.View>
-                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True">
-
-                    <dxg:TableView.FormatConditions>
-                        <dxg:FormatCondition ValueRule="Equal" Value1="0" FieldName="Enabled" PredefinedFormatName="LightRedFillWithDarkRedText" />
-                    </dxg:TableView.FormatConditions>
-
-                </dxg:TableView>
+                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True"/>
             </dxg:GridControl.View>
 
             <dxg:GridColumn FieldName="DisplayName" SortOrder="Ascending"></dxg:GridColumn>
-            <!--<dxg:GridColumn FieldName="Direction"></dxg:GridColumn>
-            <dxg:GridColumn FieldName="Enabled"></dxg:GridColumn>-->
+            <dxg:GridColumn FieldName="Direction"></dxg:GridColumn>
+            <dxg:GridColumn FieldName="Enabled"></dxg:GridColumn>
 
         </dxg:GridControl>
 
@@ -58,27 +53,21 @@
                                    SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                                    ShowCategories="Hidden">
 
-            <dxprg:PropertyGridControl.PropertyDefinitions>
-
-                <dxprg:PropertyDefinition Path="DisplayName" Header="DisplayName">
-                    <dxprg:PropertyDefinition.EditSettings>
-                        <dxe:TextEditSettings />
-                    </dxprg:PropertyDefinition.EditSettings>
-                </dxprg:PropertyDefinition>
-
-                <dxprg:PropertyDefinition Path="Direction" Header="Direction"></dxprg:PropertyDefinition>
-
-
-
-
-            </dxprg:PropertyGridControl.PropertyDefinitions>
         </dxprg:PropertyGridControl>
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
-            <dx:SimpleButton Content="Commit" Command="{Binding CommitRuleCommand}" />
-            <dx:SimpleButton Content="Enable" Command="{Binding EnableRuleCommand}"/>
-            <dx:SimpleButton Content="Disable" Command="{Binding DisableRuleCommand}" />
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" />
         </StackPanel>
+
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0" Text="{Binding OutputText}"></TextBox>
+            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" />
+        </Grid>
 
     </Grid>
 </UserControl>

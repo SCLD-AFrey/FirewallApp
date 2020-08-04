@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj": {}
+    "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj": {
+    "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
+        "projectUniqueName": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
         "projectName": "FirewallApp",
-        "projectPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
-        "packagesPath": "C:\\Users\\AFrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\obj\\",
+        "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
+        "packagesPath": "C:\\Users\\afrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AFrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\afrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
@@ -31,20 +30,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\DevExpress 19.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 20.1\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/89i4e4l4svNZAkJIVcRNOZ6TNcXFAMLWZ9kNtTNx15Cxtk142Q/api": {},
-          "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {},
-          "https://repo.didisoft.com/repository/openssl/": {}
+          "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
-                "projectPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj"
+              "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
+                "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj"
               }
             }
           }
@@ -85,25 +81,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
+    "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj",
+        "projectUniqueName": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj",
         "projectName": "FirewallEngine",
-        "projectPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj",
-        "packagesPath": "C:\\Users\\AFrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\obj\\",
+        "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj",
+        "packagesPath": "C:\\Users\\afrey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\AFrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\afrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
@@ -116,14 +111,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\DevExpress 19.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 20.1\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/89i4e4l4svNZAkJIVcRNOZ6TNcXFAMLWZ9kNtTNx15Cxtk142Q/api": {},
-          "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {},
-          "https://repo.didisoft.com/repository/openssl/": {}
+          "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -159,7 +151,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

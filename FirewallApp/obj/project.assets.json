@@ -2,12 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "DevExpress.WindowsDesktop.Charts/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Charts/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -18,10 +18,10 @@
           "lib/netstandard2.0/DevExpress.XtraCharts.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Charts.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Charts.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3"
         },
         "compile": {
@@ -31,10 +31,10 @@
           "lib/netstandard2.0/DevExpress.Charts.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.CodeParser/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.CodeParser/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.CodeDom": "4.4.0"
         },
@@ -45,7 +45,7 @@
           "lib/netstandard2.0/DevExpress.CodeParser.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Data/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Data/20.1.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.5.0",
@@ -66,15 +66,19 @@
           "lib/netstandard2.0/DevExpress.Data.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.DataAccess/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.DataAccess/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.CodeParser": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Xpo": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.CodeParser": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Xpo": "[20.1.4]",
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
           "NETStandard.Library": "2.0.3",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.Data.SqlClient": "4.5.0",
@@ -88,10 +92,10 @@
           "lib/netstandard2.0/DevExpress.DataAccess.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.DataDesktop/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.DataDesktop/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Data.Desktop.v20.1.dll": {}
@@ -100,12 +104,12 @@
           "lib/netcoreapp3.0/DevExpress.Data.Desktop.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Diagram.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Diagram.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Diagram.v20.1.Core.dll": {}
@@ -114,10 +118,10 @@
           "lib/netcoreapp3.0/DevExpress.Diagram.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Dialogs.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Dialogs.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Dialogs.v20.1.Core.dll": {}
@@ -126,11 +130,11 @@
           "lib/netcoreapp3.0/DevExpress.Dialogs.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Gauges.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Gauges.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -141,10 +145,10 @@
           "lib/netstandard2.0/DevExpress.XtraGauges.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Images/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Images/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -155,10 +159,10 @@
           "lib/netstandard2.0/DevExpress.Images.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Map.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Map.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -169,7 +173,7 @@
           "lib/netstandard2.0/DevExpress.Map.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Mvvm/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Mvvm/20.1.4": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.dll": {}
@@ -178,11 +182,11 @@
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Mvvm.DataModel/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Mvvm.DataModel/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.dll": {}
@@ -191,10 +195,10 @@
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Mvvm.DataModel": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Mvvm.DataModel": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.EFCore.dll": {}
@@ -203,11 +207,11 @@
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.EFCore.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Mvvm.ViewModel/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Mvvm.ViewModel/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm.DataModel": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm.DataModel": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.ViewModel.dll": {}
@@ -216,12 +220,12 @@
           "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.ViewModel.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Office.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Office.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -232,10 +236,10 @@
           "lib/netstandard2.0/DevExpress.Office.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Pdf.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Pdf.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0",
           "System.Reflection.Emit": "4.3.0",
@@ -248,11 +252,11 @@
           "lib/netstandard2.0/DevExpress.Pdf.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Pdf.Drawing/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Pdf.Drawing/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -263,11 +267,11 @@
           "lib/netstandard2.0/DevExpress.Pdf.v20.1.Drawing.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.PivotGrid.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.PivotGrid.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -278,12 +282,12 @@
           "lib/netstandard2.0/DevExpress.PivotGrid.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Printing.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Printing.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "4.4.0",
           "System.Drawing.Common": "4.5.0",
@@ -297,23 +301,23 @@
           "lib/netstandard2.0/DevExpress.Printing.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Reporting.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Reporting.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.CodeParser": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Gauges.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Xpo": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.CodeParser": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Gauges.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Xpo": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.CodeDom": "4.4.0",
           "System.Collections.Immutable": "1.5.0",
@@ -329,13 +333,13 @@
           "lib/netstandard2.0/DevExpress.XtraReports.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.RichEdit.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.RichEdit.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -346,13 +350,13 @@
           "lib/netstandard2.0/DevExpress.RichEdit.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.RichEdit.Export/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.RichEdit.Export/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -363,13 +367,13 @@
           "lib/netstandard2.0/DevExpress.RichEdit.v20.1.Export.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Scheduler.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Scheduler.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Images": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Images": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.XtraScheduler.v20.1.Core.dll": {}
@@ -378,10 +382,10 @@
           "lib/netcoreapp3.0/DevExpress.XtraScheduler.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Sparkline.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Sparkline.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0"
         },
@@ -392,10 +396,10 @@
           "lib/netstandard2.0/DevExpress.Sparkline.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.SpellChecker.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.SpellChecker.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.SpellChecker.v20.1.Core.dll": {}
@@ -404,16 +408,16 @@
           "lib/netcoreapp3.0/DevExpress.SpellChecker.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Spreadsheet.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Spreadsheet.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.4]",
           "NETStandard.Library": "2.0.3",
           "System.Drawing.Common": "4.5.0",
           "System.Security.AccessControl": "4.5.0"
@@ -425,10 +429,10 @@
           "lib/netstandard2.0/DevExpress.Spreadsheet.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.TreeMap.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.TreeMap.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "NETStandard.Library": "2.0.3"
         },
         "compile": {
@@ -438,47 +442,47 @@
           "lib/netstandard2.0/DevExpress.TreeMap.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm.ViewModel": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Export": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Carousel": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core.Extensions": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Dialogs": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Gantt": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Gauges": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Layout": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Map": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Navigation": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PdfViewer": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PrismAdapters": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Scheduler": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Scheduling": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.SpellChecker": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Spreadsheet": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.TreeMap": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.TypedStyles": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm.ViewModel": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Export": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Carousel": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core.Extensions": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Dialogs": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Gantt": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Gauges": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Layout": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Map": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Navigation": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PdfViewer": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PrismAdapters": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Scheduler": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Scheduling": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.SpellChecker": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Spreadsheet": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.TreeMap": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.TypedStyles": "[20.1.4]"
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Accordion/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Accordion/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Accordion.v20.1.dll": {}
@@ -487,11 +491,11 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Accordion.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Carousel/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Carousel/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Carousel.v20.1.dll": {}
@@ -500,20 +504,20 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Carousel.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Charts/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Charts/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Charts.Designer.v20.1.dll": {},
@@ -524,14 +528,14 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Charts.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Controls/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Controls/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Controls.v20.1.dll": {}
@@ -540,15 +544,15 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Controls.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.dll": {}
@@ -557,13 +561,13 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Core.Extensions/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Core.Extensions/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Xpo": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Xpo": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.Extensions.dll": {}
@@ -572,20 +576,20 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.Extensions.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Diagram/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Diagram/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Images": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Images": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Diagram.v20.1.dll": {}
@@ -594,15 +598,15 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Diagram.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Dialogs/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Dialogs/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Dialogs.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Dialogs.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Dialogs.v20.1.dll": {}
@@ -611,14 +615,14 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Dialogs.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Docking/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Docking/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Docking.v20.1.dll": {}
@@ -627,15 +631,15 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Docking.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.DocumentViewer.v20.1.Core.dll": {}
@@ -644,16 +648,16 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.DocumentViewer.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.ExpressionEditor/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.ExpressionEditor/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.ExpressionEditor.v20.1.dll": {}
@@ -662,14 +666,14 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.ExpressionEditor.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Gantt/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Gantt/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Gantt.v20.1.dll": {}
@@ -678,11 +682,11 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Gantt.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Gauges/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Gauges/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Gauges.v20.1.dll": {}
@@ -691,21 +695,21 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Gauges.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Grid/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Grid/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Printing": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Printing": "[20.1.4]"
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Grid.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Grid.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Grid.v20.1.Core.dll": {},
@@ -718,25 +722,25 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Grid.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Grid.Printing/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Grid.Printing/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]"
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Layout/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Layout/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.4]"
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Layout.Core/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Layout.Core/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Layout.v20.1.Core.dll": {}
@@ -745,12 +749,12 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Layout.v20.1.Core.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.LayoutControl/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.LayoutControl/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.LayoutControl.v20.1.dll": {}
@@ -759,15 +763,15 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.LayoutControl.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Map/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Map/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Map.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Map.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Map.v20.1.dll": {}
@@ -776,13 +780,13 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Map.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.NavBar/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.NavBar/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.NavBar.v20.1.dll": {}
@@ -791,18 +795,18 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.NavBar.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Navigation/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Navigation/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Wpf.Accordion": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Wpf.Accordion": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]"
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Office/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Office/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Office.v20.1.dll": {}
@@ -811,18 +815,18 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Office.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.PdfViewer/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.PdfViewer/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Drawing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.PdfViewer.v20.1.dll": {}
@@ -831,19 +835,19 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.PdfViewer.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.PivotGrid/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.PivotGrid/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.PivotGrid.v20.1.dll": {}
@@ -852,19 +856,19 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.PivotGrid.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Printing/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Printing/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]",
           "System.ServiceModel.Http": "4.5.3",
           "System.ServiceModel.Primitives": "4.5.3"
         },
@@ -875,14 +879,14 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Printing.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.PrismAdapters/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.PrismAdapters/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.PrismAdapters.v20.1.dll": {}
@@ -891,13 +895,13 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.PrismAdapters.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.PropertyGrid/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.PropertyGrid/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.PropertyGrid.v20.1.dll": {}
@@ -906,38 +910,38 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.PropertyGrid.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Reporting/20.1.2-ctp": {
+      "DevExpress.WindowsDesktop.Wpf.Reporting/20.1.4-ctp": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.CodeParser": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Gauges.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Images": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Reporting.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Xpo": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.CodeParser": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Gauges.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Images": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Reporting.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Sparkline.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Xpo": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.CodeView.v20.1.dll": {},
@@ -950,13 +954,13 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.ReportDesigner.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Ribbon/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Ribbon/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Ribbon.v20.1.dll": {}
@@ -965,23 +969,23 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Ribbon.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.RichEdit/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.RichEdit/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Images": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Office": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Images": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Office": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.RichEdit.v20.1.dll": {}
@@ -990,17 +994,17 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.RichEdit.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Scheduler/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Scheduler/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Scheduler.v20.1.dll": {}
@@ -1009,19 +1013,19 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Scheduler.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Scheduling/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Scheduling/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Scheduling.v20.1.dll": {}
@@ -1030,13 +1034,13 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Scheduling.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.SpellChecker/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.SpellChecker/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.SpellChecker.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.SpellChecker.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.SpellChecker.v20.1.dll": {}
@@ -1045,25 +1049,25 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.SpellChecker.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Spreadsheet/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Spreadsheet/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Images": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Spreadsheet.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Office": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Images": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Spreadsheet.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Office": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Spreadsheet.v20.1.dll": {}
@@ -1072,7 +1076,7 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Spreadsheet.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful/20.1.4": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.Themes.Office2019Colorful.v20.1.dll": {}
@@ -1081,12 +1085,12 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.Themes.Office2019Colorful.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.TreeMap/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.TreeMap/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.TreeMap.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.TreeMap.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.TreeMap.v20.1.dll": {}
@@ -1095,50 +1099,50 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.TreeMap.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Wpf.TypedStyles/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Wpf.TypedStyles/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataAccess": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Map.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Mvvm": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Office.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Reporting.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Spreadsheet.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Accordion": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Carousel": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Map": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PdfViewer": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Reporting": "[20.1.2-ctp]",
-          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Scheduling": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.SpellChecker": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.Spreadsheet": "[20.1.2-beta]",
-          "DevExpress.WindowsDesktop.Wpf.TreeMap": "[20.1.2-beta]"
+          "DevExpress.WindowsDesktop.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Charts.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataAccess": "[20.1.4]",
+          "DevExpress.WindowsDesktop.DataDesktop": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Diagram.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Map.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Mvvm": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Office.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Pdf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.PivotGrid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Printing.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Reporting.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.RichEdit.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Scheduler.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Spreadsheet.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Accordion": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Carousel": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Charts": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Controls": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Diagram": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Docking": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.ExpressionEditor": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Grid.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Layout.Core": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.LayoutControl": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Map": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.NavBar": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PdfViewer": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PivotGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Printing": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.PropertyGrid": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Reporting": "[20.1.4-ctp]",
+          "DevExpress.WindowsDesktop.Wpf.Ribbon": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.RichEdit": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Scheduling": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.SpellChecker": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.Spreadsheet": "[20.1.4]",
+          "DevExpress.WindowsDesktop.Wpf.TreeMap": "[20.1.4]"
         },
         "compile": {
           "lib/netcoreapp3.0/DevExpress.Xpf.TypedStyles.v20.1.dll": {}
@@ -1147,16 +1151,16 @@
           "lib/netcoreapp3.0/DevExpress.Xpf.TypedStyles.v20.1.dll": {}
         }
       },
-      "DevExpress.WindowsDesktop.Xpo/20.1.2-beta": {
+      "DevExpress.WindowsDesktop.Xpo/20.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.WindowsDesktop.Data": "[20.1.2-beta]",
+          "DevExpress.WindowsDesktop.Data": "[20.1.4]",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "Microsoft.Win32.Registry": "4.5.0",
           "NETStandard.Library": "2.0.3",
           "System.Data.SqlClient": "4.5.0",
           "System.Drawing.Common": "4.5.0",
-          "System.ServiceModel.Http": "4.4.0",
+          "System.ServiceModel.Http": "4.5.0",
           "System.ServiceModel.NetTcp": "4.4.0",
           "System.ServiceModel.Security": "4.4.0"
         },
@@ -1357,6 +1361,33 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.0.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1376,6 +1407,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.6": {
@@ -3291,417 +3356,417 @@
     }
   },
   "libraries": {
-    "DevExpress.WindowsDesktop.Charts/20.1.2-beta": {
-      "sha512": "uFLjX9RQvy9ut7LlXCRtLw53OAWJ2WVv/0ZD8kIFiT0ziayAfWcazjPJel5R8hvKrVaaH5VZkKthPzIN6K9TIA==",
+    "DevExpress.WindowsDesktop.Charts/20.1.4": {
+      "sha512": "Ir61J7bAWA5fytmnOyZrxIe5Sa1qtx2gl8Dkc3lsf/KZauSxJvn5Nnl0+n08eC0fldgeEeabnGtmFBmiVfgkNw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.charts/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.charts/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.charts.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.charts.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.charts.nuspec",
         "lib/netstandard2.0/DevExpress.XtraCharts.v20.1.dll",
         "lib/netstandard2.0/DevExpress.XtraCharts.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Charts.Core/20.1.2-beta": {
-      "sha512": "e1+U5BSOcDP33zIratorUQCKGz72oTeCL9/Rrpc2D+T8o1R+OruODkfmhgwxKtjs/FL3GwWbTkEmtUAouRlUvQ==",
+    "DevExpress.WindowsDesktop.Charts.Core/20.1.4": {
+      "sha512": "fp/5y7B2ZhISV1sMZ4y1Zr61p3RsZo93wCMPFrfdc9r1JmRsf0itb4RRkYymyZRZN/8s/bOxzqdaia3qJyYnCg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.charts.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.charts.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.charts.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.charts.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.charts.core.nuspec",
         "lib/netstandard2.0/DevExpress.Charts.v20.1.Core.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.CodeParser/20.1.2-beta": {
-      "sha512": "ialVkYdG2nu6MMiZY9m0S8gagzuSzS/oEWtWbWPxkBgIHHOtGCcofDodxvb5NoQkLC8O213oiBkAjOaghHvxlA==",
+    "DevExpress.WindowsDesktop.CodeParser/20.1.4": {
+      "sha512": "bSQRT+qRRam31qP5v6oZBAzYkv9o74aPc5EbtXVC8nUjAaPn5aXKORAD1mx5L3iskBAoLfjdkhEJ4A3i5qKmGA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.codeparser/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.codeparser/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.codeparser.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.codeparser.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.codeparser.nuspec",
         "lib/netstandard2.0/DevExpress.CodeParser.v20.1.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Data/20.1.2-beta": {
-      "sha512": "V1C2zXbsoLYsfXpMUJvswv0pGdHY+J98yiAGw4gIs2DOG3GMhQuKMRGjECtvSWA3wHyVnExOLCFaj4aB9khh3A==",
+    "DevExpress.WindowsDesktop.Data/20.1.4": {
+      "sha512": "Fk5hacfgqsOuCv/UCCqBMP0ti3yoRwCVRWMexDW3FjB35TSyJeU+xBtT1rBTpxRl8gOXWzCCTAE+Km5GVOfU0w==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.data/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.data/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.data.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.data.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.data.nuspec",
         "lib/netstandard2.0/DevExpress.Data.v20.1.dll",
         "lib/netstandard2.0/DevExpress.Data.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.DataAccess/20.1.2-beta": {
-      "sha512": "6Jnkiy0yD3cy5EeRtvbbBStkdFm7tKgHaOuI8Uafuhk0/nQYn5Cril1UqNvyLXjiX6SYgm8S+z5WSXq83FQ6Eg==",
+    "DevExpress.WindowsDesktop.DataAccess/20.1.4": {
+      "sha512": "7LWi9pFzpakaXLaYpZklD1vjC6MCLuJiRAdDrppjfbUEgRIVtqt1KG23GH8xwrOMVzDWDFPCTInlFPnk1dDREw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.dataaccess/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.dataaccess/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.dataaccess.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.dataaccess.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.dataaccess.nuspec",
         "lib/netstandard2.0/DevExpress.DataAccess.v20.1.dll",
         "lib/netstandard2.0/DevExpress.DataAccess.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.DataDesktop/20.1.2-beta": {
-      "sha512": "jjhAvpsuo5y1RYzqMlYxdQUXdMS60Cg75riQTCZK/4ochoMej59XZcjjj9G+H1LR9ghvtGrqMYtGMhnhvPmUhQ==",
+    "DevExpress.WindowsDesktop.DataDesktop/20.1.4": {
+      "sha512": "n0wZLggYGQQEyCcr09jfgxU9cLa/d5rLhf3c+EABIf8YS09//wdv2gRUsgBOs05q4HlfpcpE1yw61jeGVvbshg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.datadesktop/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.datadesktop/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/DevExpress.WindowsDesktop.Data.props",
-        "devexpress.windowsdesktop.datadesktop.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.datadesktop.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.datadesktop.nuspec",
         "lib/netcoreapp3.0/DevExpress.Data.Desktop.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Data.Desktop.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Diagram.Core/20.1.2-beta": {
-      "sha512": "tuXjuoo0Lq6Gtbs40qud99YPWiSxEY/IVJFJTNvia8CkYSo01ATtSjRFR9BVaVwTVg6b02aKEhta+BXKn6/UfA==",
+    "DevExpress.WindowsDesktop.Diagram.Core/20.1.4": {
+      "sha512": "11DrhK8AGFHHnLzaBUrqZga/9hhDhvz+FuJWc8ZPE4l4lN1t8oXTSyp5eC8K8pTsXysHe19l1XADaFrLWpoZJQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.diagram.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.diagram.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.diagram.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.diagram.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.diagram.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.Diagram.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.Diagram.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Dialogs.Core/20.1.2-beta": {
-      "sha512": "sJO4ZzLUiKlPY4/WjSZigUgTTDpcOoncXoicMjbF60NRo3Becs28aCbveafeZ6/Tlj/SnXq9zapVq927bpbEIg==",
+    "DevExpress.WindowsDesktop.Dialogs.Core/20.1.4": {
+      "sha512": "MORXMdjSdalZ/3UoZ7Q7pc1reIqNGXovWkJ+z8pGsdAgLASovjvaZ/4YoUE4bc0Qf1MkL31nAEAOU4BoYCWBEw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.dialogs.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.dialogs.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.dialogs.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.dialogs.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.dialogs.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.Dialogs.v20.1.Core.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Gauges.Core/20.1.2-beta": {
-      "sha512": "0JH98OAXSYPB8XKoFKInrPORrO9AZ15UYxnMEP8CdZVXrH30VhFNH0H2CutlrfIqD69bE7GbxF4MtrdEryTnsA==",
+    "DevExpress.WindowsDesktop.Gauges.Core/20.1.4": {
+      "sha512": "Z5CZf+78Ix3zhBgIzWL3puyDF5T8G8Cfeu8WY0cMYC96ayjRf0K/aIP7iwjyJj+N6o0DwEqEUsoMyIxUNEygvA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.gauges.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.gauges.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.gauges.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.gauges.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.gauges.core.nuspec",
         "lib/netstandard2.0/DevExpress.XtraGauges.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.XtraGauges.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Images/20.1.2-beta": {
-      "sha512": "jSmH9b8rY24mzxaMYd3V5G0XSMElFDo2ekxlpMF78sP/K5pwbpEEYYDJpKN6eahMThYPETznJISI5iAKMRkMAw==",
+    "DevExpress.WindowsDesktop.Images/20.1.4": {
+      "sha512": "aR088vkkVdmQAV+RjUAQDMjfp1MqTswZjnAScDa3XOKPWoHC8JvE2+Dln/n2MlmmRRm8d3fYtIoR6IJXWDxCnA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.images/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.images/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.images.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.images.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.images.nuspec",
         "lib/netstandard2.0/DevExpress.Images.v20.1.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Map.Core/20.1.2-beta": {
-      "sha512": "jBbtdVRPSvN54gMyAPl5Gtm/Rx5iCNbgZDvkNmVRsv6YrM9zFnj/UaQGcs6OP1hYwzDm3Gcq6oBFWa3GR2xWFQ==",
+    "DevExpress.WindowsDesktop.Map.Core/20.1.4": {
+      "sha512": "/btnMdW7AHXv67v5GKfJEmPtuHfxbRiDCagXqvvm5ZyJN+yn2RFtuxsb/zMGTKEg2hZRvwgWXSRejVcAucrGxA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.map.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.map.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.map.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.map.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.map.core.nuspec",
         "lib/netstandard2.0/DevExpress.Map.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Map.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Mvvm/20.1.2-beta": {
-      "sha512": "vdzxsCD7UqsQogjNK1eSx6ewCV+H4alH15QcuLlvSfthAcBro2brzNaKhpcG4EUAQx0IfQ6fjJfLDxMCliPhpg==",
+    "DevExpress.WindowsDesktop.Mvvm/20.1.4": {
+      "sha512": "Ji4kccBuEGWluKYVLIwWqCTFdj9foxIMhRXJXVhlFfIpNeRar9dyMOka4FJj07z1LstgntB6oJO1+XrvmuXj5w==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.mvvm/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.mvvm/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.mvvm.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.mvvm.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.mvvm.nuspec",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Mvvm.DataModel/20.1.2-beta": {
-      "sha512": "TZ24Vr1Cn8MdKvFoA63XHsFOgTR6wbXSeCwV1ou7VrUI8id/74BSxKmSwS1cVd/O1LyXeSszRRoCcQCw8w3icA==",
+    "DevExpress.WindowsDesktop.Mvvm.DataModel/20.1.4": {
+      "sha512": "h+VrHJQJ6VzI9KC83vNtPOYizxQ2GCbrlSfJHvW4+lIfSBj/Nkl3t+GSYMlfXr/0eiRUjTFD+13OHX1sVWGETQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.mvvm.datamodel/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.mvvm.datamodel/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.mvvm.datamodel.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.mvvm.datamodel.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.mvvm.datamodel.nuspec",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.dll",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore/20.1.2-beta": {
-      "sha512": "+LJKmSRUhJnM+ZeXgo5N/i0C/dnHRhWnmWwr0U4VbwdwxeXG4gGyybtdGzS8+4pQEhCuqhNkZJ1JUQmRlz1BzQ==",
+    "DevExpress.WindowsDesktop.Mvvm.DataModel.EFCore/20.1.4": {
+      "sha512": "V+bBxRIDnJ27w3GTwkuTDpIq7dUloRbEeb0uweE1MsZHok/Wp1tXRQbkUtjI79EFvfOA391XffMsPMrlcfnggQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.mvvm.datamodel.efcore/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.mvvm.datamodel.efcore/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.mvvm.datamodel.efcore.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.mvvm.datamodel.efcore.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.mvvm.datamodel.efcore.nuspec",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.DataModel.EFCore.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Mvvm.ViewModel/20.1.2-beta": {
-      "sha512": "hueeIzG3qbk1VoVFuMUKZKcSq9GoIfLK9f0tXphOZaHYo/aXWPfNuibysl4wAlsF12CusgIo/CjGHkcQnUEVFQ==",
+    "DevExpress.WindowsDesktop.Mvvm.ViewModel/20.1.4": {
+      "sha512": "aUUWdEKJ2TydRa6qbt4ErjrZKZlzAmHUFyu29re3HUJoTDmrYQ2X1IG+ACagDwtMtoneAuPVckTUimsjaMWkPA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.mvvm.viewmodel/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.mvvm.viewmodel/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.mvvm.viewmodel.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.mvvm.viewmodel.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.mvvm.viewmodel.nuspec",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.ViewModel.dll",
         "lib/netcoreapp3.0/DevExpress.Mvvm.v20.1.ViewModel.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Office.Core/20.1.2-beta": {
-      "sha512": "LLg+mH8M7wyRoX7IrV2QbUgTLV5yU20BnX/KYtSVsbFmCCvyrExcSgYnrRaYE0DNbmikVg9NlISfCJX7YLegQw==",
+    "DevExpress.WindowsDesktop.Office.Core/20.1.4": {
+      "sha512": "yddtDrTZRZM4MylNOO4eQJqcCI7GBboNjXSdBKZ8yBv5IjlZHAlG1j9g3WAfNhrqr8T0AJHxRMhTMV+lev6Y2w==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.office.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.office.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.office.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.office.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.office.core.nuspec",
         "lib/netstandard2.0/DevExpress.Office.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Office.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Pdf.Core/20.1.2-beta": {
-      "sha512": "DpcHraEbia32nlDy7BzpzdEBviLiNP/o7zjt3O7DTNI2bVVuRvreCFktrzcHwcE2UWii5JmJL72n925YB1qneQ==",
+    "DevExpress.WindowsDesktop.Pdf.Core/20.1.4": {
+      "sha512": "22oniuc/nxLOVFP76RKy85vl3eYDN0626vEJ2wuxcb4598893pB+cEAmTUJ29jpYEPm7fi2C1eCbWDPl1+GmFw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.pdf.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.pdf.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.pdf.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.pdf.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.pdf.core.nuspec",
         "lib/netstandard2.0/DevExpress.Pdf.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Pdf.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Pdf.Drawing/20.1.2-beta": {
-      "sha512": "I2HaFq+XlwW7fAEWHl109B8F32M1RWFcxNBGNKFLGbuhe5cJUNuDs9W/BpHTrU8jB727hz79gT1H3HAV+m0Ocg==",
+    "DevExpress.WindowsDesktop.Pdf.Drawing/20.1.4": {
+      "sha512": "9n50/Gwh81Pxd1PialQ9Q4ttt8Uo3yEAq3h/azhc8orGb+6wwIIO60o+Mh/X5fPSxBoAT0tK8v9yN0A2c3XEgQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.pdf.drawing/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.pdf.drawing/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.pdf.drawing.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.pdf.drawing.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.pdf.drawing.nuspec",
         "lib/netstandard2.0/DevExpress.Pdf.v20.1.Drawing.dll",
         "lib/netstandard2.0/DevExpress.Pdf.v20.1.Drawing.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.PivotGrid.Core/20.1.2-beta": {
-      "sha512": "jx8qJXDJiwnmFr4/wMBatEVi75/sgW38502Xp/YxE5400jfXnQ6b6GZGpuScJDxL/5fjEa6jJ33yEYs2zSXOKg==",
+    "DevExpress.WindowsDesktop.PivotGrid.Core/20.1.4": {
+      "sha512": "3LXtFukPTXkb5cfq0J2MgwijAT88yVxlP1QokwsQRw6CRnzG46XxwK7eO/JX2+RqIjuZ+nwj0k8Yl65x63Agxg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.pivotgrid.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.pivotgrid.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.pivotgrid.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.pivotgrid.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.pivotgrid.core.nuspec",
         "lib/netstandard2.0/DevExpress.PivotGrid.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.PivotGrid.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Printing.Core/20.1.2-beta": {
-      "sha512": "IlHu1YE24jXplK3w3sVYWzvB+5BMRrqevxA/HK12atUKlhCIaB2uwORJYSf7cGdAkqWLaHIff1XhidgJrSQCOQ==",
+    "DevExpress.WindowsDesktop.Printing.Core/20.1.4": {
+      "sha512": "hfzQ7rgQbndg+NA8AIkYqFSls6G43o6TzEdK84msHl2Aj9b0jAUFhTusOtKXmK5/3d3lu+cOFDoIHKzVrsEsLg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.printing.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.printing.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.printing.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.printing.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.printing.core.nuspec",
         "lib/netstandard2.0/DevExpress.Printing.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Printing.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Reporting.Core/20.1.2-beta": {
-      "sha512": "QqWi8J5QTQl5m/VfhmKzE7jyg702zwZNjf72T8oGOvNrVqO2LCYanMzOkyccZ0OwMu1QDPxFHdkbqgbbq8WnnQ==",
+    "DevExpress.WindowsDesktop.Reporting.Core/20.1.4": {
+      "sha512": "WfjTR6Rm0RDvLpwGICSrMPbwWyapvsedgwAhO77fe8lVuqGIcARPwKp3sR/XSKGOncMIBm/sNDIl7jVgMQTaRg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.reporting.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.reporting.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.reporting.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.reporting.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.reporting.core.nuspec",
         "lib/netstandard2.0/DevExpress.XtraReports.v20.1.dll",
         "lib/netstandard2.0/DevExpress.XtraReports.v20.1.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.RichEdit.Core/20.1.2-beta": {
-      "sha512": "ThnVdACYmsYcZa5Vp9ryLjiOgk7Lq0/eMqaZmmwQqyE8DfYQQAYh3qV+Rf2+Zg83XlGg8V4fNv2XbR3TA3lFuA==",
+    "DevExpress.WindowsDesktop.RichEdit.Core/20.1.4": {
+      "sha512": "oBQXxBs5t6vxTna+LhLGOXfULj8aq0fuWoIuIsHwIGc/XfbmcfT7bH4sbcck93wsyzBnwL+MxFo27kLvMUK0sQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.richedit.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.richedit.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.richedit.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.richedit.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.richedit.core.nuspec",
         "lib/netstandard2.0/DevExpress.RichEdit.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.RichEdit.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.RichEdit.Export/20.1.2-beta": {
-      "sha512": "OxABt81qQxomHN8MZSVZBGh5vr+56rlVeS7vKi1DKz7usC1l5pdqli/hBJ0mvKfVUuH2QljUagQTo8bVVbEupw==",
+    "DevExpress.WindowsDesktop.RichEdit.Export/20.1.4": {
+      "sha512": "45i+/2UEJAOd+1q6Nx3yTi56GZYHCEnUI5bbd9/Q/CYUZxeRRLxtpnroQI7zN1oKsRLE9bZUZWQ4kLLfGpsWLg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.richedit.export/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.richedit.export/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.richedit.export.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.richedit.export.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.richedit.export.nuspec",
         "lib/netstandard2.0/DevExpress.RichEdit.v20.1.Export.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Scheduler.Core/20.1.2-beta": {
-      "sha512": "SorRZG2MveP7VjiF2eQ9ndkFb1JxShAJF1Qp1tJaCANK4EgSfLU+u19TpX4F2HadIAftG4+G2hqiit9COfZ8mg==",
+    "DevExpress.WindowsDesktop.Scheduler.Core/20.1.4": {
+      "sha512": "MvzLUO31ldR6+XPMkF6wPXGhLIwjrdYdB4EVVpJjny8JS7pwbodQTFCQ3ZKRQUXJtxGTChBDBO9rcvy98qa4Nw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.scheduler.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.scheduler.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.scheduler.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.scheduler.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.scheduler.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.XtraScheduler.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.XtraScheduler.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Sparkline.Core/20.1.2-beta": {
-      "sha512": "y1QkU5XbcypwRCbH+FDFWfdb1Maum2/qjAh2UAf6lGXUMnmOcj/v0TKE58L6Ca5FHVFODjPiikvtJiQqIbi5WQ==",
+    "DevExpress.WindowsDesktop.Sparkline.Core/20.1.4": {
+      "sha512": "7hTNX5/6v9WmseXKcuEPTHCHWsx6WdjlYljudygtvAHAeXaMWp5t+dzT4ECVZ7npllLNq0npfDqAuVJVQdTTaw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.sparkline.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.sparkline.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.sparkline.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.sparkline.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.sparkline.core.nuspec",
         "lib/netstandard2.0/DevExpress.Sparkline.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Sparkline.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.SpellChecker.Core/20.1.2-beta": {
-      "sha512": "5r7OpNOlSyMy3/ECpnIMKy5/DtiQlGVX1MoMszmP/rjuuOp7UFFwPdhuaFT4oCdGpC+m+F52keblRrcVVD2aWQ==",
+    "DevExpress.WindowsDesktop.SpellChecker.Core/20.1.4": {
+      "sha512": "qNrnUrLHpIgUrtCTxTjFERdeP/uc1WIEoZ63d5ngPp0voWpMBpqEGKmN9aqMs7Kegn1t9duxdIhmP48RCgbCOQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.spellchecker.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.spellchecker.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.spellchecker.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.spellchecker.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.spellchecker.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.SpellChecker.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.SpellChecker.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Spreadsheet.Core/20.1.2-beta": {
-      "sha512": "fnT65WfweHM+ojlxUm8d8j8I3QeVSCkqHgWpnWV0bkGRUbRir4dZRxHzPOWeMuid2CMtcyomtr4d0djpyLZzQA==",
+    "DevExpress.WindowsDesktop.Spreadsheet.Core/20.1.4": {
+      "sha512": "VBw96nSuow/3K3EL0YJk+evN8+BBKDkg3IcckfAVWpnS+B0Q+nPvtqL3g6E4yD2L/KMrzx/uCA6Xo8lRG3suxw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.spreadsheet.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.spreadsheet.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.spreadsheet.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.spreadsheet.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.spreadsheet.core.nuspec",
         "lib/netstandard2.0/DevExpress.Spreadsheet.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.Spreadsheet.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.TreeMap.Core/20.1.2-beta": {
-      "sha512": "CabnQTgIC7ItdZk6c1bPns2wc0zncftVHeOKrSW7ce80IkWElaEJOpv8tNcUmiVwqBjCHi+8O95VcMCLWbNbNg==",
+    "DevExpress.WindowsDesktop.TreeMap.Core/20.1.4": {
+      "sha512": "D3qLvBgRQDqKFn+eFghRrKL3bh3uL/zLaDCyvtOc1IcGeWFzZYPTFIEgWkHmtgBklZ2D8inwS+YXibyeSwmbFw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.treemap.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.treemap.core/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.treemap.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.treemap.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.treemap.core.nuspec",
         "lib/netstandard2.0/DevExpress.TreeMap.v20.1.Core.dll",
         "lib/netstandard2.0/DevExpress.TreeMap.v20.1.Core.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf/20.1.2-beta": {
-      "sha512": "gEG5T+R89iBLn2SzOUJByNfu3EdNnMHAMjQq4ZnH+TipXCz3tHyDH6qNb2pmeV/sjOEo7zc5M9whpGU/+DvTxg==",
+    "DevExpress.WindowsDesktop.Wpf/20.1.4": {
+      "sha512": "AZgcxzztAV5wCaErypMgZ/Cmoy0QadQxLO6B5wNi1En7CjstLWuHv0+wkAr0xhgmOICA9IIekMvzPyc/amWq2A==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Accordion/20.1.2-beta": {
-      "sha512": "nHj0gX0BkDi2tRfFIGqYmGfUNpzdOQMa49Mw6bdG5tAf1mtQdLcPPNNhUsrHz0LIT6Iym+JNKF9DrHbVImLfTQ==",
+    "DevExpress.WindowsDesktop.Wpf.Accordion/20.1.4": {
+      "sha512": "GUT40lAA7vOZcZxnBO4I8NNb8lep1iLtvc06gIKo30SandxBkDflOgqlYlW1xhiuzumjKM5etJqBO5UBrcLKzg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.accordion/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.accordion/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.accordion.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.accordion.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.accordion.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Accordion.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Accordion.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Carousel/20.1.2-beta": {
-      "sha512": "fI9Al5K9Ud79Dolf5vewAxePqlaNlXK5gebYp6gLMce2qICGTZChx2Q2Yxum3j59oIWutHy7kUA/4FDEOJxafw==",
+    "DevExpress.WindowsDesktop.Wpf.Carousel/20.1.4": {
+      "sha512": "ELm3kFGZDqILVlLnl8AFQud4KI1r01ymEAl+aJo23V5Kb/IsSMCpIhn66AuKfSao7rfKBo2mH9GtBgbv+GAVlw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.carousel/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.carousel/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.carousel.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.carousel.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.carousel.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Carousel.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Carousel.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Charts/20.1.2-beta": {
-      "sha512": "T1bGBybP1GXZSFUyAubut4F+JAPCmwNfDx4LWHlRYVqUVFL2yn8umCuzO9m/h7XmeyjherHbMMVLK05bYFCI2A==",
+    "DevExpress.WindowsDesktop.Wpf.Charts/20.1.4": {
+      "sha512": "LWpammIJdAMM6xliLxL5pnIyMU/5NERJbjGGji3hBoU2z3UG8lwUu2pf2ndzY08AXIhYsn9pnPtI9VEMHHiOxA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.charts/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.charts/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.charts.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.charts.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.charts.nuspec",
         "lib/netcoreapp3.0/DevExpress.Charts.Designer.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Charts.Designer.v20.1.xml",
@@ -3710,30 +3775,30 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Controls/20.1.2-beta": {
-      "sha512": "XESydfNeCYOWhdn5XsaZvPOdY2HOKT+VTvKmQGASRmD68jBRnZ/oJiwBNJ8oNtHIkBJzowVtnnvoCCnytFY7PQ==",
+    "DevExpress.WindowsDesktop.Wpf.Controls/20.1.4": {
+      "sha512": "ppHBGJILIlXq+vJmOMZuYUYXd9nY52FrXd69oR6n/vMiwdvHrVvntmRlh06KSXDGAQUgFdI3oCOUcnM8JPpeag==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.controls/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.controls/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.controls.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.controls.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.controls.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Controls.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Controls.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Core/20.1.2-beta": {
-      "sha512": "cuZzj9RLamE+/HC/nRyg+GCgbSq9mh96wpsF8OERtcxPoKR2wYyLGwiYGZK4RxggqDfS3u7WfsTn87/iG/Q+Yw==",
+    "DevExpress.WindowsDesktop.Wpf.Core/20.1.4": {
+      "sha512": "ondoghIQRotGVNMp2KIM1mvEyccnXWdxMXtcn9X1jcPjnIC5b6V+pwy6k9Js1cjT/p0q7UGop/x2EshKnV9vOw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.core/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.core.nuspec",
         "lib/netcoreapp3.0/Design/DevExpress.Xpf.Core.v20.1.DesignTools.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.dll",
@@ -3741,145 +3806,146 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Core.Extensions/20.1.2-beta": {
-      "sha512": "3DwL/dff2Sxj9PrhFQIQljCIkmp3IvcEnlMsutPwTlOgeOkf//3ciL4+3seEgPLie42OybuyX0MC6rc04D7lNA==",
+    "DevExpress.WindowsDesktop.Wpf.Core.Extensions/20.1.4": {
+      "sha512": "+uzev5mUiq8uDNnVl25w+B1F0n7oRTcuJ1qsykMyt692C8lQDOgC/A47sxltZ87kQrfTsrzOhkqTfSJu1ccDYg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.core.extensions/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.core.extensions/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.core.extensions.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.core.extensions.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.core.extensions.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Core.v20.1.Extensions.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Diagram/20.1.2-beta": {
-      "sha512": "2/cEz8Vh7yl7Iy4Uui3+kcWIitXJXG441ZRov58YfKMlL+Zr2BZnT6ejAh96m/O1MD6kGYHH1KmZxk8LU8POzw==",
+    "DevExpress.WindowsDesktop.Wpf.Diagram/20.1.4": {
+      "sha512": "nrO3Rm1gC/Wb1CdTzuBNve4FYGsVDyjgHi544/8OOZrFGw7p5Yz/sLRJ67GMQMjlQ8yL6hS1nrPKmpM+/Nmwbw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.diagram/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.diagram/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.diagram.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.diagram.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.diagram.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Diagram.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Diagram.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Dialogs/20.1.2-beta": {
-      "sha512": "6BIxQTveXEMNpHS+5vz7YHKGahrHaqb3AYQ+fSqQ3N2zg7l/lBzmd/oAd6rD1vpHytFnw3R7eBVQSo8iWoy86w==",
+    "DevExpress.WindowsDesktop.Wpf.Dialogs/20.1.4": {
+      "sha512": "Fpq6uQhl4f9ofyab9anjcKxmk61DE6skLZPMbVW+SMTDnx8scVLeZnKLPaJo24/uMJhnIQXeftVi+75nrwFBeA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.dialogs/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.dialogs/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.dialogs.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.dialogs.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.dialogs.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Dialogs.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Dialogs.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Docking/20.1.2-beta": {
-      "sha512": "QW39sNA6Q8stS06/C+BZyA35Xx42AxzadnvHeIGPXV/SgfJYHOJ8V+3qe+jiLKS+6taIyVlhz2cbRtlJZtimPg==",
+    "DevExpress.WindowsDesktop.Wpf.Docking/20.1.4": {
+      "sha512": "MD9gwxRNXH9DIdWmGQpPaRTRMV8OW3jlxlA5ndkvcqhGCTLdmZVz+dw0PQBg6fJ77Y/vnkkk9BOSF2AW8NR+Qg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.docking/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.docking/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.docking.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.docking.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.docking.nuspec",
+        "lib/netcoreapp3.0/Design/DevExpress.Xpf.Docking.v20.1.DesignTools.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Docking.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Docking.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core/20.1.2-beta": {
-      "sha512": "IXfq9BtfXxaqJ54E24DFyZG+o8Ir6h/aZJyIAa5vs3+vzz0r/df1WTvqRHGZCrPMU8fa/xV9QC8KYP3TTLoABw==",
+    "DevExpress.WindowsDesktop.Wpf.DocumentViewer.Core/20.1.4": {
+      "sha512": "yN/ZYzv1zAc0lZQHBLrYVDlY22Mir0juGaI5ORHa0QpTfEMC05gIk/heBVO19UXs2k5xwRUo4OAoFoEbkSoN2g==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.documentviewer.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.documentviewer.core/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.documentviewer.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.documentviewer.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.documentviewer.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.DocumentViewer.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.DocumentViewer.v20.1.Core.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.ExpressionEditor/20.1.2-beta": {
-      "sha512": "Jo4DCiOajevc5vdRWoDNFkNVR4IF/mkzdfUhwiyoZHB8rAk0xKiWeLe8+wffSTUF5ZuV3tiNpMW2BcqN9UAchQ==",
+    "DevExpress.WindowsDesktop.Wpf.ExpressionEditor/20.1.4": {
+      "sha512": "uQHWSkEjkfyojwzP5phnBc4bQixxCoezM9Xu78I5PRUdlawJwel73gS1jh/0IuFeLJ2HhxakGBGlQzTTeyebBA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.expressioneditor/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.expressioneditor/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.expressioneditor.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.expressioneditor.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.expressioneditor.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.ExpressionEditor.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.ExpressionEditor.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Gantt/20.1.2-beta": {
-      "sha512": "3zTT0VP5fbhN9QC6l8o089g7CO2Y5lvknBRAjNt6efXhYjnxM9U3FmfPGLGG4Migr/mxbym+PL3lOrL+PCaLlw==",
+    "DevExpress.WindowsDesktop.Wpf.Gantt/20.1.4": {
+      "sha512": "UiuYqWfOODET6/USq0SFyBktoALOQXKqj5NasbMgSzdRMxo2N8xqQAdye/JtAXP2XIK24SHv7mgaC9pD+WlYGA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.gantt/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.gantt/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.gantt.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.gantt.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.gantt.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Gantt.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Gantt.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Gauges/20.1.2-beta": {
-      "sha512": "3irQFhfZHw2YFeLTRacwdmCcaWqRyxDZV2OtH0UpJPpKLqFhmvYoCsKjqDmY/fPFGYxAJzabMOcohENfYoW0hg==",
+    "DevExpress.WindowsDesktop.Wpf.Gauges/20.1.4": {
+      "sha512": "Ev8gXEXrIGocOC3ukl6OxgB27tlv57nq5KwGbvFtHotYpBomwRAf2PZ+I1zwu7dAgaKNLDqsQff+kZu0ZQEcBw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.gauges/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.gauges/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.gauges.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.gauges.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.gauges.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Gauges.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Gauges.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Grid/20.1.2-beta": {
-      "sha512": "6NHps5QwJeKAhkJ5yeXyn/MiIprS9XpWdhcV660GrNLsI124qQ1plmg9SKrveCzYRzsSfZoJ7ZofyB/iSSDJqQ==",
+    "DevExpress.WindowsDesktop.Wpf.Grid/20.1.4": {
+      "sha512": "tntPw3RnkuDbJ75hXuJczJe2FwLWktni+uHnwEC7EAPdkyo9XQsIWlQqvpvNvTNr0hGJQFXFJBMW/XP0/pabag==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.grid/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.grid/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.grid.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.grid.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.grid.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Grid.Core/20.1.2-beta": {
-      "sha512": "Tie1zwmXAn1ppWgL0pButQOm0+OBgz5Tu+EmE/8ZNyxhxv283E85Y5K2jevWH/43HjiyDHi2R98nEAOF8ou8aA==",
+    "DevExpress.WindowsDesktop.Wpf.Grid.Core/20.1.4": {
+      "sha512": "Swx0UlthtlBA6FMHRCkTpUjr6h2StUrDxvAfq8UdoOaVnHR6VLkVSl2v0RHNCfaTgMXIWQDwFlYW9+7chBNRsQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.grid.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.grid.core/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.grid.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.grid.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.grid.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Grid.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Grid.v20.1.Core.xml",
@@ -3889,201 +3955,202 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Grid.Printing/20.1.2-beta": {
-      "sha512": "KQ8TEBvYzOUg54KWdyAqToV8dheT5Z8k4TFoMeJYDbXZ+isc63ewoRuOZpGZ68ACn4PSNqVusOdV0O0KnCDckQ==",
+    "DevExpress.WindowsDesktop.Wpf.Grid.Printing/20.1.4": {
+      "sha512": "h3KZcAsZ4nH8Zg9BCP8LLKZp0qBotmFn5RHy8KFlA91m1Hh4ocF/asWrbW7c6RtECZsxT0dfLDV16R1wWHN0MA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.grid.printing/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.grid.printing/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.grid.printing.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.grid.printing.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.grid.printing.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Layout/20.1.2-beta": {
-      "sha512": "h/pdOTN+NbUlzl2L4rbo+TDUe9QSpWmA1cKreGBslFaP45xPONG/HQSPrcFVwdz8D6pNF7AX+0uf22iybxvXbA==",
+    "DevExpress.WindowsDesktop.Wpf.Layout/20.1.4": {
+      "sha512": "t92dS0nRceJtyJGr3ewThM/sv4s3mesv/FF7QhczZodsJqIXcItQyT7s/FHlBmNzxX/mLOYC/y2VVXZZm3GU0A==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.layout/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.layout/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.layout.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.layout.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.layout.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Layout.Core/20.1.2-beta": {
-      "sha512": "f9QSuzdYVfUFE2nmgnehIXxJGi9p8FQcvbfiQqQjH9UXs2tRFrbLfvCHYoiTsHSZXlri3a78HFDQ47/kq+6Jwg==",
+    "DevExpress.WindowsDesktop.Wpf.Layout.Core/20.1.4": {
+      "sha512": "c7rSltelNPnN/yFkG9rhGtTHWwsJ9s0GP2IpDF/WNLYvSKFaqiD0pvLUphdeL0bu8a/8PnzxuaPhpPcs3RJdCQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.layout.core/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.layout.core/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.layout.core.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.layout.core.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.layout.core.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Layout.v20.1.Core.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Layout.v20.1.Core.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.LayoutControl/20.1.2-beta": {
-      "sha512": "Kpachk4/7S2Td0LTo0h/ZaKwdGR4+8OXvby2V9l/NpK0+0OBGvqHfuJJb/PDx8ZokxIGIhcxxDeY2IQw7ilJjw==",
+    "DevExpress.WindowsDesktop.Wpf.LayoutControl/20.1.4": {
+      "sha512": "AXJjIZ0fOkFJJtaggPhp7Aju+mhqcYaTwk1sQ/sa59kF223Pl80qc5Alll4UtmGlYy2VBhMHLYQsh/TKChEMDA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.layoutcontrol/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.layoutcontrol/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.layoutcontrol.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.layoutcontrol.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.layoutcontrol.nuspec",
+        "lib/netcoreapp3.0/Design/DevExpress.Xpf.LayoutControl.v20.1.DesignTools.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.LayoutControl.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.LayoutControl.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Map/20.1.2-beta": {
-      "sha512": "4gkKs1rbu+2ZGK2YXA2InxtwMFU4i036fyLNlKerRIPcMM+4nUdjosJoU+O4sZICpfi7n2QWGSGgBwPAiJy5Fg==",
+    "DevExpress.WindowsDesktop.Wpf.Map/20.1.4": {
+      "sha512": "0IutBDgM36dMcWETI1W0X3WcgbICpqCnIQNLFUBVqwjYZfsP47Fx4cXXMyAVLXh2A9TgGyNLTQ0W/atuWwf8ug==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.map/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.map/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.map.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.map.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.map.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Map.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Map.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.NavBar/20.1.2-beta": {
-      "sha512": "zdPoK9X84xH81ydXDN02lxPUZ30zREn6AJbD4U0QAM3BQYQKlSjUOnx6ta/pRqiYhHzTbnKNPcE3OAUsYYGxsA==",
+    "DevExpress.WindowsDesktop.Wpf.NavBar/20.1.4": {
+      "sha512": "t/X549mzLIUTMtbbKeWX8OJBvkompAWV1yDRvh2LJQT9oLmNF2TEOt7SvHq3Nc6CnV/NxIFLgt17faGSsoSDMQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.navbar/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.navbar/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.navbar.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.navbar.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.navbar.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.NavBar.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.NavBar.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Navigation/20.1.2-beta": {
-      "sha512": "oo8tV70NVMgbVY8emb/9594Dn0N/GRqqiqB2fN5QmtXT/CC4fDbYz0FGzUXlaBP4uceMNUucx4qKq6JATgBkxA==",
+    "DevExpress.WindowsDesktop.Wpf.Navigation/20.1.4": {
+      "sha512": "9hzVPTgkM/LuStGurzvwTz7Z9X8UzeYvM/XP9qlxsMcnuS2cGg77+Cm2J2kDxaMcZ91238k417k/okH7i4vBYA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.navigation/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.navigation/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.navigation.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.navigation.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.navigation.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Office/20.1.2-beta": {
-      "sha512": "iDkjYWkt5vajkobp69xLoZIohd5qyhTeZlrTTBOVTHhAvyl+Yfh7nUJm7jhxm1h/mroSeCsO5+sED8WbaXdaqw==",
+    "DevExpress.WindowsDesktop.Wpf.Office/20.1.4": {
+      "sha512": "N3PS39NszTDPWiWmzkdm84lxRoIMyvrUGGuyQmw6m3DPjvCXBq6d5m8RE52gmg+M28B5MJEXcDR/jmW9noe7EA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.office/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.office/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.office.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.office.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.office.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Office.v20.1.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.PdfViewer/20.1.2-beta": {
-      "sha512": "eTfPOvG3KpPzrlbnaMC1RiOuxSE8KOpudw5bQvYbcd7Y6FEO+R2RYjCkJKApctwjb/8zSQeF6kA/GpuylKhG2g==",
+    "DevExpress.WindowsDesktop.Wpf.PdfViewer/20.1.4": {
+      "sha512": "nILgqERpkziBVZITP1/+IJVBGIqHek60XFgdcfXKQQeG0dfHuMrWqs5nggW1Ve+kSsghRJpeyKK5RrHsaV6kQg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.pdfviewer/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.pdfviewer/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.pdfviewer.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.pdfviewer.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.pdfviewer.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.PdfViewer.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.PdfViewer.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.PivotGrid/20.1.2-beta": {
-      "sha512": "OiM9sDTclXEfVeig8jvd+1LFXrwnqnzrLkCD4Z+2ArdJEt6T/JVkUjZFOI3I/ZTTalnu+Kio2wTT8u1Ktr1O6A==",
+    "DevExpress.WindowsDesktop.Wpf.PivotGrid/20.1.4": {
+      "sha512": "IcF5S9GdZXbLhuHfjQTRWRaRysl8f1lA1TS09IvQdtHMlJ9+prC5mAzuYUs5C5ke7tLOEv3uVkqv1q9OpdlCWg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.pivotgrid/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.pivotgrid/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.pivotgrid.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.pivotgrid.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.pivotgrid.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.PivotGrid.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.PivotGrid.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Printing/20.1.2-beta": {
-      "sha512": "SKvevReaktNnCx6JWfdGK1keynwuiXFev6go8g/2EGLl7uwREJEj/czLv9ADp6QefnNyRQr5mp7YVqa/Y7wwOA==",
+    "DevExpress.WindowsDesktop.Wpf.Printing/20.1.4": {
+      "sha512": "wlRp03xGQrllsbZIFLzmTdvG1ggdqeCfDC8e+VWc2XULQZ9MuA/7i/p/i/uBb+2zoobZnfZjHsN5W1fufxBcng==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.printing/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.printing/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.printing.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.printing.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.printing.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Printing.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Printing.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.PrismAdapters/20.1.2-beta": {
-      "sha512": "iKkwKIKBJGnqIuU0qdX+EKMFrUlKZ0UfMutpUQO9q1w3Esd7GK8hvWDfgzNBx0eFlUyJguqpK6caaJFXOoLePw==",
+    "DevExpress.WindowsDesktop.Wpf.PrismAdapters/20.1.4": {
+      "sha512": "2qBmlOF9M0ZJ4pOTU0KVNSS71rVXOCxNIa9JnxUxJGEfv9ev/G7XmK4K0K/ZxwXINm5aaO8pjKlT8CdGnz8Jfw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.prismadapters/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.prismadapters/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.prismadapters.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.prismadapters.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.prismadapters.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.PrismAdapters.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.PrismAdapters.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.PropertyGrid/20.1.2-beta": {
-      "sha512": "30mn/fTRRpaM3MA+B2bVItxnh97lmfOJreNTzLaQ0UPNncUJnTTAnflVGFvJo3ZMANBg/gmvRhBF17kdLMsoeQ==",
+    "DevExpress.WindowsDesktop.Wpf.PropertyGrid/20.1.4": {
+      "sha512": "TPaMQN+FVhk/fvtJSL4r6ZmozoEoi1wm+thl81FEMGthpD1Pcwz/ddL4uBdXs9m2VGCwfNLnjeookp3J594UjA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.propertygrid/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.propertygrid/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.propertygrid.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.propertygrid.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.propertygrid.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.PropertyGrid.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.PropertyGrid.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Reporting/20.1.2-ctp": {
-      "sha512": "iidMEcK9TwQ5BcttOARZGreKQ59Rl4Ahe4IMc72qSFrCZuY5Cea3Mju3dTCg03hZnPY5uFKCXyMrN/UtnD/+1A==",
+    "DevExpress.WindowsDesktop.Wpf.Reporting/20.1.4-ctp": {
+      "sha512": "sef+Zkq0+KDL2tKWL2rTuA7MpyiYtV3aeUOYX7eptPos+jqvwjk5DcAOEFyIvpI6/8G+mWlPFv9BMymjAd03CQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.reporting/20.1.2-ctp",
+      "path": "devexpress.windowsdesktop.wpf.reporting/20.1.4-ctp",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.reporting.20.1.2-ctp.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.reporting.20.1.4-ctp.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.reporting.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.CodeView.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.DataAccess.v20.1.dll",
@@ -4091,143 +4158,143 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Ribbon/20.1.2-beta": {
-      "sha512": "Yoc1l1nOD6czHGJ9HeUKbK+7K7EORb73eewfe0SoTQJp41B6VKeb2UU4B8+ZZVr8xOUNZ0CI7h0uqZ8D3REAJQ==",
+    "DevExpress.WindowsDesktop.Wpf.Ribbon/20.1.4": {
+      "sha512": "MYRtLx2iYbqAMnzpTTwn7l96ku/k6XehqKqQI0Qch899EBc4GrVr6Wb/NKIwm7n/GMhkfczueMfxqhneyUj5lA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.ribbon/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.ribbon/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.ribbon.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.ribbon.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.ribbon.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Ribbon.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Ribbon.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.RichEdit/20.1.2-beta": {
-      "sha512": "wGxFkl1KISJWydkIlrN9HIoAzMbKBTjKnIGacMNU2KcQqpw0ko/Oq7R/KShUOTRbm8k+8ZfgWXCWL7D7RwXMOA==",
+    "DevExpress.WindowsDesktop.Wpf.RichEdit/20.1.4": {
+      "sha512": "Hp6J/HG1x8FAE7ONN64TeBD5ty+gGr3pWBrhPnXGhH7gDad89wA4trIgTpBYnoYEFQIw3p7p/rN7cINsXlaeJw==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.richedit/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.richedit/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.richedit.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.richedit.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.richedit.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.RichEdit.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.RichEdit.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Scheduler/20.1.2-beta": {
-      "sha512": "Czcuk0q1iqFiwKuXvSJkwXeL5r3TKg/vOS/0dnBKWvoABVzkbtlC1f2FKbL76hh1NCyzHPBKEKKdfIrKQWoFrg==",
+    "DevExpress.WindowsDesktop.Wpf.Scheduler/20.1.4": {
+      "sha512": "7aAfquN+lSHKmwiIwDitLxBmeqwNjXnLB8tJsPz4cRfaF0dAbMHXhE8vkEiY6/Mhp92hxyr6m6QhjWfrvbGiRQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.scheduler/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.scheduler/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.scheduler.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.scheduler.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.scheduler.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Scheduler.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Scheduler.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Scheduling/20.1.2-beta": {
-      "sha512": "P+WfGjNGsRXuxU+n+UROPyo6av0cPvWWh1trzsi8IvY4oaIhQ0zg0CrVQ6jKdF1gadFkDYiMlSUn8/MjcfuVhw==",
+    "DevExpress.WindowsDesktop.Wpf.Scheduling/20.1.4": {
+      "sha512": "zypBmHhqHCEVlOjzYwRx61eAyUroT+nFC/NB9BMw9BrPdPG27+Zv/jg9J6pkiqHsrt0myK2TgdsKY6rW7LHArA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.scheduling/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.scheduling/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.scheduling.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.scheduling.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.scheduling.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Scheduling.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Scheduling.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.SpellChecker/20.1.2-beta": {
-      "sha512": "tWi01e3DumenJ4zTIQ52XuIo2C3ZEvzMlKd7eJNCyGyIOGJFzBHjymcNfCS3QARkH3X1f2Qt/ztPQnq1t5+OfA==",
+    "DevExpress.WindowsDesktop.Wpf.SpellChecker/20.1.4": {
+      "sha512": "1ixs7nyWbWCZS6xryaU/CyZR0GA65EgE9GG7Z9Cvih19+wXE1wBxF3IYhcYIB5GX1yG5xoQx4vbZTT6glh+2eg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.spellchecker/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.spellchecker/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.spellchecker.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.spellchecker.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.spellchecker.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.SpellChecker.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.SpellChecker.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Spreadsheet/20.1.2-beta": {
-      "sha512": "8Kp7ZwHhYqAcanNVmYC3LvhTjryE9cHhXy+NvJjIgulw1K1ILxcBP9HuyCwwuAeGHy3XnVCWkgYVf8DTmPS0ZA==",
+    "DevExpress.WindowsDesktop.Wpf.Spreadsheet/20.1.4": {
+      "sha512": "vYQ9faK4yjMFghWd89a4OE0KSDIU64NjWuJoP7ZdWW8WRA9MryHQfknxT8M+IWfIaDccfJdq5HnIelWIppd7CQ==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.spreadsheet/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.spreadsheet/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.spreadsheet.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.spreadsheet.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.spreadsheet.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Spreadsheet.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.Spreadsheet.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful/20.1.2-beta": {
-      "sha512": "uY07vslCrS54BuFNYx+7QnTX8NV9somTkOMN7qHaB+w4AKox1J2ag/BtJ3rF/d3/xys41/MKwkC9YOOO6PQLBw==",
+    "DevExpress.WindowsDesktop.Wpf.Themes.Office2019Colorful/20.1.4": {
+      "sha512": "YQYKgubbsIt3v8q0RwQjivqNCdiTHZKMi9qh1bXbNIRekhty0IyOTjKliozNodib2SOj4pHmuOZhBw/5aAfCSg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.themes.office2019colorful/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.themes.office2019colorful/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.themes.office2019colorful.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.themes.office2019colorful.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.themes.office2019colorful.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.Themes.Office2019Colorful.v20.1.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.TreeMap/20.1.2-beta": {
-      "sha512": "0wdK5hEnUwCVL+V2DRrtNfEXwrUgNj8RQeTS/Bjh9z5A6yaMIs/UYIV7Jz+aW36faI0i4iCP/aJiwiQz+NrsrA==",
+    "DevExpress.WindowsDesktop.Wpf.TreeMap/20.1.4": {
+      "sha512": "q+be7sraE1PuF7lOJvG0UxGRKxo6998WhX+fqLNeBusAnspzJ4ts/fkPIT7pireGGVX7oIdpauAn5lfEk1Pq7Q==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.treemap/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.treemap/20.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.treemap.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.treemap.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.treemap.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.TreeMap.v20.1.dll",
         "lib/netcoreapp3.0/DevExpress.Xpf.TreeMap.v20.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.WindowsDesktop.Wpf.TypedStyles/20.1.2-beta": {
-      "sha512": "TQdemwSYzFn3U6NrdLybHtYLUGQqm4Jh7RbKTVKpssGu8rxqpTJIsuHF5hgpCaXs6bnMKJu5VkDDcWu6z0ih0g==",
+    "DevExpress.WindowsDesktop.Wpf.TypedStyles/20.1.4": {
+      "sha512": "7BCyMvVuHHnJPTHW2fiFM4MJrkHdQFxehS8l/iUFYeFKvCx3LRDb00XUI4tUPdj69UeyLQs7DhVNLkUwlOM5rg==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.wpf.typedstyles/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.wpf.typedstyles/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.wpf.typedstyles.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.wpf.typedstyles.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.wpf.typedstyles.nuspec",
         "lib/netcoreapp3.0/DevExpress.Xpf.TypedStyles.v20.1.dll"
       ]
     },
-    "DevExpress.WindowsDesktop.Xpo/20.1.2-beta": {
-      "sha512": "Lmf18Bf4cPdomd0+TatYfMyx/KYC2z4+RVzXy8NBrtOmIk9GVHi9gF6/ZvTczeGKoCKQz/mkOwhNDWz9lXKT5A==",
+    "DevExpress.WindowsDesktop.Xpo/20.1.4": {
+      "sha512": "eJRCUbxEeWGGZ755WMG5ySoRCqAacOSFOxZC4/1pfuQ26HG6j1f8yFAn3ERdvjePRDBMmL+afxy7INohli1zzA==",
       "type": "package",
-      "path": "devexpress.windowsdesktop.xpo/20.1.2-beta",
+      "path": "devexpress.windowsdesktop.xpo/20.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.windowsdesktop.xpo.20.1.2-beta.nupkg.sha512",
+        "devexpress.windowsdesktop.xpo.20.1.4.nupkg.sha512",
         "devexpress.windowsdesktop.xpo.nuspec",
         "lib/netstandard2.0/DevExpress.Xpo.v20.1.dll",
         "lib/netstandard2.0/DevExpress.Xpo.v20.1.xml"
@@ -4518,6 +4585,32 @@
         "microsoft.extensions.configuration.abstractions.nuspec"
       ]
     },
+    "Microsoft.Extensions.Configuration.FileExtensions/2.0.0": {
+      "sha512": "ebFbu+vsz4rzeAICWavk9a0FutWVs7aNZap5k/IVxVhu2CnnhOp/H/gNtpzplrqjYDaNYdmv9a/DoUvH2ynVEQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/2.0.0": {
+      "sha512": "thPz4SckRGNqeLbdvJ619YxRFSkWuL1K5QqTMb3TVdEwjQj4O39yfUtjtI/XlWJiY7JKK4MUKAiQZVYc8ohKKg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
       "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
       "type": "package",
@@ -4542,6 +4635,45 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
+      "sha512": "Z0AK+hmLO33WAXQ5P1uPzhH7z5yjDHX/XnUefXxE//SyvCb9x4cVjND24dT5566t/yzGp8/WLD7EG9KQKZZklQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/2.0.0": {
+      "sha512": "DKO2j2socZbHNCCVEWsLVpB3AQIIzKYFNyITVeWdA1jQ829GJIQf4MUD04+1c+Q2kbK03pIKQZmEy4CGIfgDZw==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.2.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/2.0.0": {
+      "sha512": "UC87vRDUB7/vSaNY/FVhbdAyRkfFBTkYmcUoglxk6TyTojhSqYaG5pZsoP4e1ZuXktFXJXJBTvK8U/QwCo0z3g==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.2.0.0.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.6": {
@@ -9031,25 +9163,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AFrey\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\afrey\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
+      "projectUniqueName": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
       "projectName": "FirewallApp",
-      "projectPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
-      "packagesPath": "C:\\Users\\AFrey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\obj\\",
+      "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\FirewallApp.csproj",
+      "packagesPath": "C:\\Users\\afrey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\AFrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\afrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 19.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
@@ -9062,20 +9192,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\DevExpress 19.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\DevExpress 20.1\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/89i4e4l4svNZAkJIVcRNOZ6TNcXFAMLWZ9kNtTNx15Cxtk142Q/api": {},
-        "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {},
-        "https://repo.didisoft.com/repository/openssl/": {}
+        "https://nuget.pkg.github.com/SteelCloudLLC/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
-              "projectPath": "C:\\Users\\AFrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj"
+            "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj": {
+              "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallEngine\\FirewallEngine\\FirewallEngine.csproj"
             }
           }
         }
@@ -9116,7 +9243,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

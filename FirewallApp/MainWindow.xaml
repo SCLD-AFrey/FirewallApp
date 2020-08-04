@@ -6,6 +6,9 @@
     xmlns:Views="clr-namespace:FirewallApp.Views"
     Title="MainWindow" Height="800" Width="1000">
     <Grid>
-        <Views:MainView/>
+        <TabControl>
+            <TabItem Header="Profiles"><Views:ProfilesView /></TabItem>
+            <TabItem Header="Rules"><Views:RulesView /></TabItem>
+        </TabControl>
     </Grid>
 </dx:ThemedWindow>

@@ -15,6 +15,41 @@
              xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
              DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ProfilesViewModel}">
     <Grid>
-            
+        <ItemsControl ItemsSource="{Binding ProfileCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="1" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition Height="22"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <dxprg:PropertyGridControl Grid.Row="0" 
+                                                   SelectedObject="{Binding }" 
+                                                   ShowEditorButtons="False" 
+                                                   ShowGridLines="True" 
+                                                   ShowMenuButtonInRows="False" 
+                                                   ShowSearchBox="False" 
+                                                   ShowToolPanel="False" ShowCategories="Hidden"
+                                                   IsEnabled="{Binding IsEditEnabled}"
+                                                   >
+
+                        </dxprg:PropertyGridControl>
+                        <dx:SimpleButton Grid.Row="1" Content="Commit" Command="{Binding CommitProfileCommand}" />
+
+                    </Grid>
+
+
+
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </UserControl>

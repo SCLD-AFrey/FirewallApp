@@ -1,20 +1,20 @@
 ﻿FirewallApp
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\AFrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\
 FirewallApp
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\AFrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\App.xaml
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\App.xaml
 4-778680363
 
-10-1897275128
-305-721209692
+91309253754
+3101762799594
 MainWindow.xaml;Views\MainView.xaml;Views\ProfilesView.xaml;Views\RulesView.xaml;
 
-True
+False
 
