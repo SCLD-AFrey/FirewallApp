@@ -15,7 +15,15 @@
              xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
              DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ProfilesViewModel}">
     <Grid>
-        <ItemsControl ItemsSource="{Binding ProfileCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="66"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <ItemsControl Grid.Row="0" ItemsSource="{Binding ProfileCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -42,7 +50,6 @@
                                                    >
 
                         </dxprg:PropertyGridControl>
-                        <dx:SimpleButton Grid.Row="1" Content="Commit" Command="{Binding CommitProfileCommand}" />
 
                     </Grid>
 
@@ -51,5 +58,24 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
+
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" />
+        </StackPanel>
+
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0" Text="{Binding shellScript}"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Visible"></TextBox>
+            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" />
+        </Grid>
+
     </Grid>
 </UserControl>

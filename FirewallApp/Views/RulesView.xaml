@@ -20,52 +20,50 @@
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="22"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="22"></RowDefinition>
-            <RowDefinition Height="22"></RowDefinition>
+            <RowDefinition Height="66"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
-            <dx:SimpleButton Content="Load Firewall Rules" Command="{Binding LoadRulesCommand}" />
-        </StackPanel>
-
-        <dxg:GridControl Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"
+        <dxg:GridControl Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"
                          SelectionMode="Row"
                          AutoGenerateColumns="None"
-                         
+                         IsEnabled="{Binding IsEditEnabled}"
                          ItemsSource="{DXBinding 'RuleCollection', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                          SelectedItem="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
             <dxg:GridControl.View>
-                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True"/>
+                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True" AllowEditing="False"/>
             </dxg:GridControl.View>
 
             <dxg:GridColumn FieldName="DisplayName" SortOrder="Ascending"></dxg:GridColumn>
             <dxg:GridColumn FieldName="Direction"></dxg:GridColumn>
-            <dxg:GridColumn FieldName="Enabled"></dxg:GridColumn>
 
         </dxg:GridControl>
 
 
-        <dxprg:PropertyGridControl Grid.Row="1" 
+        <dxprg:PropertyGridControl Grid.Row="0" 
                                    Grid.Column="1" 
                                    SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                                   ShowCategories="Hidden">
+                                   ShowCategories="Hidden"
+                                   IsEnabled="{Binding IsEditEnabled}" ShowSearchBox="False">
 
         </dxprg:PropertyGridControl>
 
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
             <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" />
+            <dx:SimpleButton Content="Create New Rule" Command="{Binding CreateNewRuleCommand}" />
         </StackPanel>
 
 
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3">
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="0" Text="{Binding OutputText}"></TextBox>
+            <TextBox Grid.Column="0" Text="{Binding shellScript}"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Visible"></TextBox>
             <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" />
         </Grid>
 
