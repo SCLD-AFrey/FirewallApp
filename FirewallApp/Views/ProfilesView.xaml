@@ -41,13 +41,33 @@
 
                         <dxprg:PropertyGridControl Grid.Row="0" 
                                                    SelectedObject="{Binding }" 
-                                                   ShowEditorButtons="False" 
-                                                   ShowGridLines="True" 
-                                                   ShowMenuButtonInRows="False" 
-                                                   ShowSearchBox="False" 
-                                                   ShowToolPanel="False" ShowCategories="Hidden"
-                                                   IsEnabled="{Binding IsEditEnabled}"
-                                                   >
+                                                   ShowCategories="Hidden"
+                                                   IsEnabled="{Binding IsEditEnabled}" 
+                                                   ShowSearchBox="False"
+                                                   ShowProperties="WithPropertyDefinitions" ShowToolPanel="False">
+
+                            <dxprg:PropertyGridControl.PropertyDefinitions>
+                                <dxprg:PropertyDefinition Path="Name" Header="Name" IsReadOnly="True"  />
+                                <dxprg:PropertyDefinition Path="LogFileName" Header="Log File Name" />
+                                <dxprg:PropertyDefinition Path="LogAllowed" Header="Log Allowed" />
+                                <dxprg:PropertyDefinition Path="LogBlocked" Header="Log Blocked" />
+                                <dxprg:PropertyDefinition Path="LogIgnored" Header="Log Ignored" />
+
+                                <dxprg:PropertyDefinition Path="Enabled" Header="Enabled" />
+                                <dxprg:PropertyDefinition Path="EnableStealthModeForIPsec" Header="Enable Stealth Mode For IPsec" />
+                                <dxprg:PropertyDefinition Path="NotifyOnListen" Header="Notify On Listen" />
+
+                                <dxprg:PropertyDefinition Path="DisabledInterfaceAliases" Header="Disabled Interface Aliases" />
+                                <dxprg:PropertyDefinition Path="DefaultInboundAction" Header="Default Inbound Action" />
+                                <dxprg:PropertyDefinition Path="DefaultOutboundAction" Header="Default Outbound Action" />
+
+                                <dxprg:PropertyDefinition Path="AllowLocalFirewallRules" Header="Allow Local Firewall Rules" />
+                                <dxprg:PropertyDefinition Path="AllowLocalIPsecRules" Header="Allow Local IPsec Rules" />
+                                <dxprg:PropertyDefinition Path="AllowInboundRules" Header="Allow Inbound Rules" />
+                                <dxprg:PropertyDefinition Path="AllowUserApps" Header="Allow User Apps" />
+                                <dxprg:PropertyDefinition Path="AllowUserPorts" Header="Allow User Ports" />
+
+                            </dxprg:PropertyGridControl.PropertyDefinitions>
 
                         </dxprg:PropertyGridControl>
 
@@ -62,7 +82,8 @@
 
 
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" />
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" />
+            <dx:SimpleButton Content="View Profile Objects" Command="{Binding ViewProfileObjectsCommand}" Background="Gray" />
         </StackPanel>
 
 
@@ -71,10 +92,10 @@
                 <ColumnDefinition Width="10*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="0" Text="{Binding shellScript}"
+            <TextBox Grid.Column="0" Text="{Binding PowerShellScript}"
                      TextWrapping="Wrap"
                      VerticalScrollBarVisibility="Visible"></TextBox>
-            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" />
+            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" Background="DarkGreen" />
         </Grid>
 
     </Grid>

@@ -16,8 +16,8 @@
              DataContext="{dxmvvm:ViewModelSource Type=ViewModels:RulesViewModel}">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -41,18 +41,53 @@
 
         </dxg:GridControl>
 
+        <Grid Grid.Row="0" 
+              Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
 
-        <dxprg:PropertyGridControl Grid.Row="0" 
-                                   Grid.Column="1" 
-                                   SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                                   ShowCategories="Hidden"
-                                   IsEnabled="{Binding IsEditEnabled}" ShowSearchBox="False">
+            <TextBlock Grid.Row="0" Text="{Binding PropertyHeader}"></TextBlock>
 
-        </dxprg:PropertyGridControl>
+            <dxprg:PropertyGridControl Grid.Row="1" 
+                                       SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                       ShowCategories="Hidden"
+                                       IsEnabled="{Binding IsEditEnabled}" 
+                                       ShowSearchBox="False"
+                                       ShowProperties="WithPropertyDefinitions" ShowToolPanel="False">
+
+                <dxprg:PropertyGridControl.PropertyDefinitions>
+                    <dxprg:PropertyDefinition Path="DisplayName" Header="Display Name" IsReadOnly="True"  />
+                    <dxprg:PropertyDefinition Path="DisplayGroup" Header="Display Group" IsReadOnly="True" />
+                    <dxprg:PropertyDefinition Path="InstanceID" Header="Instance ID" IsReadOnly="True" />
+                    <dxprg:PropertyDefinition Path="Description" Header="Description" />
+                    <dxprg:PropertyDefinition Path="Action" Header="Action" />
+                    <dxprg:PropertyDefinition Path="Enabled" Header="Enabled" />
+                    <dxprg:PropertyDefinition Path="Direction" Header="Direction" />
+
+                    <dxprg:PropertyDefinition Path="EdgeTraversePolicy" Header="Edge Traverse Policy" />
+                    <dxprg:PropertyDefinition Path="PrimaryStatus" Header="Primary Status" />
+                    <dxprg:PropertyDefinition Path="Program" Header="Program" />
+                    <dxprg:PropertyDefinition Path="LocalAddress" Header="Local Address" />
+                    <dxprg:PropertyDefinition Path="RemoteAddress" Header="Remote Address" />
+                    <dxprg:PropertyDefinition Path="LocalPort" Header="Local Port" />
+                    <dxprg:PropertyDefinition Path="RemotePort" Header="Remote Port" />
+                    <dxprg:PropertyDefinition Path="Protocol" Header="Protocol" />
+                    <dxprg:PropertyDefinition Path="Program" Header="Program" />
+                    <dxprg:PropertyDefinition Path="InterfaceType" Header="Interface Type" />
+                </dxprg:PropertyGridControl.PropertyDefinitions>
+            </dxprg:PropertyGridControl>
+        </Grid>
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
-            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" />
-            <dx:SimpleButton Content="Create New Rule" Command="{Binding CreateNewRuleCommand}" />
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" />
+            <dx:SimpleButton Content="Create New Rule" Command="{Binding CreateNewRuleCommand}" Background="Yellow" />
+            <dx:SimpleButton Content="NetFirewallRule" Command="{Binding ViewPsNetFirewallRuleCommand}" Background="Gray" />
+            <dx:SimpleButton Content="PortFilter" Command="{Binding ViewPsPortFilterCommand}" Background="Gray" />
+            <dx:SimpleButton Content="AddressFilter" Command="{Binding ViewPsAddressFilterCommand}" Background="Gray" />
+            <dx:SimpleButton Content="ApplicationFilter" Command="{Binding ViewPsApplicationFilterCommand}" Background="Gray" />
+            <dx:SimpleButton Content="InterfaceTypeFilter" Command="{Binding ViewPsInterfaceTypeFilterCommand}" Background="Gray" />
         </StackPanel>
 
 
@@ -61,10 +96,10 @@
                 <ColumnDefinition Width="10*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Column="0" Text="{Binding shellScript}"
+            <TextBox Grid.Column="0" Text="{Binding PowerShellScript}"
                      TextWrapping="Wrap"
                      VerticalScrollBarVisibility="Visible"></TextBox>
-            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" />
+            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" Background="DarkGreen" />
         </Grid>
 
     </Grid>

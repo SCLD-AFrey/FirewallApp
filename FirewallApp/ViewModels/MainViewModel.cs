@@ -1,12 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Xpo;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using DevExpress.CodeParser;
-using FirewallEngine;
 
 namespace FirewallApp.ViewModels
 {

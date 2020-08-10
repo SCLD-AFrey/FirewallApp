@@ -2,12 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Xpo;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
-using System.Threading.Tasks;
-using DevExpress.CodeParser;
+using FirewallApp.Views;
 using FirewallEngine;
 
 namespace FirewallApp.ViewModels
@@ -21,6 +17,7 @@ namespace FirewallApp.ViewModels
                 (MetadataBuilder<ProfilesViewModel> p_builder)
             {
                 p_builder.CommandFromMethod(p_x => p_x.OnBuildPsScriptCommand()).CommandName("BuildPsScriptCommand");
+                p_builder.CommandFromMethod(p_x => p_x.OnViewProfileObjectsCommand()).CommandName("ViewProfileObjectsCommand");
                 p_builder.CommandFromMethod(p_x => p_x.OnRunPsScriptCommand()).CommandName("RunPsScriptCommand");
 
             }
@@ -30,7 +27,7 @@ namespace FirewallApp.ViewModels
 
         protected ProfilesViewModel()
         {
-            shellScript = string.Empty;
+            PowerShellScript = string.Empty;
             fUtils = new FirewallUtilities();
             GetProfiles();
         }
@@ -47,7 +44,7 @@ namespace FirewallApp.ViewModels
         public virtual FirewallUtilities fUtils { get; set; }
         public virtual ObservableCollection<Profile> ProfileCollection { get; set; }
         public virtual Profile SelectedProfile { get; set; }
-        public virtual string shellScript { get; set; }
+        public virtual string PowerShellScript { get; set; }
         public virtual bool IsEditEnabled { get; set; } = false;
 
         #endregion
@@ -62,7 +59,7 @@ namespace FirewallApp.ViewModels
         }
         public void OnBuildPsScriptCommand()
         {
-            shellScript = fUtils.BuildProfileScript(ProfileCollection);
+            PowerShellScript = fUtils.BuildProfileScript(ProfileCollection);
         }
 
         public async void OnRunPsScriptCommand()
@@ -72,6 +69,16 @@ namespace FirewallApp.ViewModels
             //var result = await PowershellTools.RunScript(OutputText);
             //OutputText = "Script Completed - " + result.IsSuccess.ToString();
             IsEditEnabled = true;
+        }
+
+        public async void OnViewProfileObjectsCommand()
+        {
+            var result = await fUtils.GetFirewallProfile();
+            var newWin = new ObjectView();
+            var obj = ObjectViewModel.Create();
+            obj.SelectedPsObject = result[0];
+            newWin.DataContext = obj;
+            newWin.Show();
         }
 
         #endregion
