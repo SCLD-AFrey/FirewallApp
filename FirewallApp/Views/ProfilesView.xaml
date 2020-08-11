@@ -82,8 +82,8 @@
 
 
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" />
-            <dx:SimpleButton Content="View Profile Objects" Command="{Binding ViewProfileObjectsCommand}" Background="Gray" />
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" Foreground="White" />
+            <dx:SimpleButton Content="View Profile Objects" Command="{Binding ViewProfileObjectsCommand}" Background="Gray" Foreground="White" />
         </StackPanel>
 
 
@@ -95,7 +95,7 @@
             <TextBox Grid.Column="0" Text="{Binding PowerShellScript}"
                      TextWrapping="Wrap"
                      VerticalScrollBarVisibility="Visible"></TextBox>
-            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" Background="DarkGreen" />
+            <dx:SimpleButton Grid.Column="1" Content="Commit" Command="{Binding RunPsScriptCommand}" Background="DarkGreen" Foreground="White" />
         </Grid>
 
     </Grid>

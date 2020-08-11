@@ -58,6 +58,7 @@
                                        ShowProperties="WithPropertyDefinitions" ShowToolPanel="False">
 
                 <dxprg:PropertyGridControl.PropertyDefinitions>
+                    <dxprg:PropertyDefinition Path="Name" Header="Name" IsReadOnly="True"  />
                     <dxprg:PropertyDefinition Path="DisplayName" Header="Display Name" IsReadOnly="True"  />
                     <dxprg:PropertyDefinition Path="DisplayGroup" Header="Display Group" IsReadOnly="True" />
                     <dxprg:PropertyDefinition Path="InstanceID" Header="Instance ID" IsReadOnly="True" />
@@ -81,13 +82,16 @@
         </Grid>
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
-            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" />
-            <dx:SimpleButton Content="Create New Rule" Command="{Binding CreateNewRuleCommand}" Background="Yellow" />
-            <dx:SimpleButton Content="NetFirewallRule" Command="{Binding ViewPsNetFirewallRuleCommand}" Background="Gray" />
-            <dx:SimpleButton Content="PortFilter" Command="{Binding ViewPsPortFilterCommand}" Background="Gray" />
-            <dx:SimpleButton Content="AddressFilter" Command="{Binding ViewPsAddressFilterCommand}" Background="Gray" />
-            <dx:SimpleButton Content="ApplicationFilter" Command="{Binding ViewPsApplicationFilterCommand}" Background="Gray" />
-            <dx:SimpleButton Content="InterfaceTypeFilter" Command="{Binding ViewPsInterfaceTypeFilterCommand}" Background="Gray" />
+            <dx:SimpleButton Content="Build Script" Command="{Binding BuildPsScriptCommand}" Background="DarkGreen" Foreground="White" />
+            <dx:SimpleButton Content="Create New Rule" Command="{Binding CreateNewRuleCommand}" Background="Yellow" Foreground="White" />
+
+            <TextBlock Text="Objects:" />
+
+            <dx:SimpleButton Content="NetFirewallRule" Command="{Binding ViewPsNetFirewallRuleCommand}" Background="Gray" Foreground="White" />
+            <dx:SimpleButton Content="PortFilter" Command="{Binding ViewPsPortFilterCommand}" Background="Gray" Foreground="White" />
+            <dx:SimpleButton Content="AddressFilter" Command="{Binding ViewPsAddressFilterCommand}" Background="Gray" Foreground="White" />
+            <dx:SimpleButton Content="ApplicationFilter" Command="{Binding ViewPsApplicationFilterCommand}" Background="Gray" Foreground="White" />
+            <dx:SimpleButton Content="InterfaceTypeFilter" Command="{Binding ViewPsInterfaceTypeFilterCommand}" Background="Gray" Foreground="White" />
         </StackPanel>
 
 

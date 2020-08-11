@@ -5,7 +5,7 @@ using DevExpress.Mvvm.POCO;
 using System.Collections.ObjectModel;
 using System.Drawing;
 using FirewallApp.Views;
-using FirewallEngine;
+using FirewallUtilities;
 
 
 namespace FirewallApp.ViewModels
@@ -36,7 +36,7 @@ namespace FirewallApp.ViewModels
         protected RulesViewModel()
         {
             PowerShellScript = string.Empty;
-            fUtils = new FirewallUtilities();
+            fUtils = new FirewallUtilities.Utilities();
             GetRules();
 
         }
@@ -51,7 +51,7 @@ namespace FirewallApp.ViewModels
         #region Fields and Properties
 
 
-        public virtual FirewallUtilities fUtils { get; set; }
+        public virtual FirewallUtilities.Utilities fUtils { get; set; }
         public virtual ObservableCollection<Rule> RuleCollection { get; set; }
         public virtual Rule SelectedRule { get; set; }
         public virtual string PowerShellScript { get; set; }
@@ -81,7 +81,7 @@ namespace FirewallApp.ViewModels
         {
             IsEditEnabled = false;
             await fUtils.SetExecutionPolicy();
-            var result = await PowershellTools.RunScript(PowerShellScript);
+            var result = await fUtils.ExecScriptTask(PowerShellScript);
             PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
             
             GetRules();

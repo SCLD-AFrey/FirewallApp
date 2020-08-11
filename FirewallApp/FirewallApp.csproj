@@ -12,7 +12,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.6" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FirewallEngine\FirewallEngine\FirewallEngine.csproj" />
+    <ProjectReference Include="..\FirewallUtilities\FirewallUtilities.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">

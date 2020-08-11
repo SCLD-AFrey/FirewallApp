@@ -4,7 +4,7 @@ using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
 using System.Collections.ObjectModel;
 using FirewallApp.Views;
-using FirewallEngine;
+using FirewallUtilities;
 
 namespace FirewallApp.ViewModels
 {
@@ -28,7 +28,7 @@ namespace FirewallApp.ViewModels
         protected ProfilesViewModel()
         {
             PowerShellScript = string.Empty;
-            fUtils = new FirewallUtilities();
+            fUtils = new FirewallUtilities.Utilities();
             GetProfiles();
         }
 
@@ -41,7 +41,7 @@ namespace FirewallApp.ViewModels
 
         #region Fields and Properties
 
-        public virtual FirewallUtilities fUtils { get; set; }
+        public virtual FirewallUtilities.Utilities fUtils { get; set; }
         public virtual ObservableCollection<Profile> ProfileCollection { get; set; }
         public virtual Profile SelectedProfile { get; set; }
         public virtual string PowerShellScript { get; set; }
@@ -66,8 +66,9 @@ namespace FirewallApp.ViewModels
         {
             IsEditEnabled = false;
             await fUtils.SetExecutionPolicy();
-            //var result = await PowershellTools.RunScript(OutputText);
-            //OutputText = "Script Completed - " + result.IsSuccess.ToString();
+
+            var result = await fUtils.ExecScriptTask(PowerShellScript);
+            PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
             IsEditEnabled = true;
         }
 
