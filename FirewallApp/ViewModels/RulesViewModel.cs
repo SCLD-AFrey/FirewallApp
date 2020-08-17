@@ -3,15 +3,19 @@ using System.ComponentModel.DataAnnotations;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
+using System.Management.Automation;
+using System.Threading.Tasks;
 using FirewallApp.Views;
 using FirewallUtilities;
-
+using DevExpress.Mvvm;
 
 namespace FirewallApp.ViewModels
 {
     [MetadataType(typeof(MetaData))]
-    public class RulesViewModel
+    public class RulesViewModel : ViewModelBase
     {
         public class MetaData : IMetadataProvider<RulesViewModel>
         {
@@ -36,9 +40,8 @@ namespace FirewallApp.ViewModels
         protected RulesViewModel()
         {
             PowerShellScript = string.Empty;
-            fUtils = new FirewallUtilities.Utilities();
+            FirewallUtils = new FirewallUtilities.Utilities();
             GetRules();
-
         }
 
         public static RulesViewModel Create()
@@ -50,14 +53,14 @@ namespace FirewallApp.ViewModels
 
         #region Fields and Properties
 
-
-        public virtual FirewallUtilities.Utilities fUtils { get; set; }
+        public virtual FirewallUtilities.Utilities FirewallUtils { get; set; }
         public virtual ObservableCollection<Rule> RuleCollection { get; set; }
         public virtual Rule SelectedRule { get; set; }
         public virtual string PowerShellScript { get; set; }
         public virtual bool IsEditEnabled { get; set; } = false;
+        public virtual bool IsExistingRule { get; set; } = true;
         public virtual string PropertyHeader { get; set; } = string.Empty;
-
+        
         #endregion
 
         #region Methods
@@ -65,26 +68,38 @@ namespace FirewallApp.ViewModels
         private async void GetRules()
         {
             IsEditEnabled = false;
-            await fUtils.SetExecutionPolicy();
-            var resultObjs = await fUtils.GetFirewallRule();
-            RuleCollection = await fUtils.CreateRuleCollection(resultObjs);
+            await FirewallUtils.SetExecutionPolicy();
+            var resultObjs = await FirewallUtils.GetFirewallRule();
+            RuleCollection = await FirewallUtils.CreateRuleCollection(resultObjs);
             IsEditEnabled = true;
         }
         public void OnBuildPsScriptCommand()
         {
             IsEditEnabled = false;
-            PowerShellScript = fUtils.BuildRuleScript(SelectedRule);
+            PowerShellScript = FirewallUtils.BuildRuleScript(SelectedRule);
             IsEditEnabled = true;
         }
 
         public async void OnRunPsScriptCommand()
         {
             IsEditEnabled = false;
-            await fUtils.SetExecutionPolicy();
-            var result = await fUtils.ExecScriptTask(PowerShellScript);
-            PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
-            
-            GetRules();
+            await FirewallUtils.SetExecutionPolicy();
+
+
+            var check = RuleCollection.Where(x => x.DisplayName == SelectedRule.DisplayName);
+            var intCheck = check.Count();
+
+            if (intCheck == 0)
+            {
+                var result = await FirewallUtils.ExecScriptTask(PowerShellScript, true);
+                PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
+                GetRules();
+            }
+            else
+            {
+                PowerShellScript = "Script Halted - Rule '" + SelectedRule.DisplayName + "' already exists";
+            }
+
             IsEditEnabled = true;
         }
 
@@ -93,7 +108,12 @@ namespace FirewallApp.ViewModels
             IsEditEnabled = false;
             PowerShellScript = String.Empty;
             await SelectedRule.GetAdditionalInfo();
+
+            RaisePropertyChanged(nameof(SelectedRule));
+            
             PropertyHeader = SelectedRule.DisplayName;
+            IsExistingRule = !SelectedRule.IsNew;
+            
             IsEditEnabled = true;
         }
 
@@ -101,61 +121,67 @@ namespace FirewallApp.ViewModels
         {
             IsEditEnabled = false;
             SelectedRule = new Rule(){IsNew = true};
-            PropertyHeader = "New Rule";
+            IsExistingRule = false;
             IsEditEnabled = true;
+        }
+
+        public async Task ShowObjectWindow(string psObjType)
+        {
+            PSDataCollection<PSObject> resultObjs = new PSDataCollection<PSObject>();
+            switch (psObjType)
+            {
+                case "GetFirewallRule":
+                    resultObjs = await FirewallUtils.GetFirewallRule(SelectedRule.DisplayName);
+                    break;
+                case "GetNetFirewallPortFilter":
+                    resultObjs = await FirewallUtils.GetNetFirewallPortFilter(SelectedRule.DisplayName);
+                    break;
+                case "GetNetFirewallAddressFilter":
+                    resultObjs = await FirewallUtils.GetNetFirewallAddressFilter(SelectedRule.DisplayName);
+                    break;
+                case "GetNetFirewallApplicationFilter":
+                    resultObjs = await FirewallUtils.GetNetFirewallApplicationFilter(SelectedRule.DisplayName);
+                    break;
+                case "GetNetFirewallInterfaceTypeFilter":
+                    resultObjs = await FirewallUtils.GetNetFirewallInterfaceTypeFilter(SelectedRule.DisplayName);
+                    break;
+            }
+
+            if (resultObjs.Count != 1)
+            {
+                throw new Exception("ShowObjectWindow has not returned a single object");
+            }
+
+            var newWin = new ObjectView();
+            var obj = ObjectViewModel.Create();
+            obj.SelectedPsObject = resultObjs[0];
+            newWin.DataContext = obj;
+            newWin.Title = $@"Object Properties: {SelectedRule.DisplayName} {resultObjs[0].Properties["CimClass"].Value.ToString().Split(':')[1]}";
+            newWin.Show();
         }
 
         public async void OnViewPsNetFirewallRuleCommand()
         {
-            var result = await fUtils.GetFirewallRule(SelectedRule.DisplayName);
-            var newWin = new ObjectView();
-            var obj = ObjectViewModel.Create();
-            obj.SelectedPsObject = result[0];
-            newWin.DataContext = obj;
-
-
-
-            newWin.Show();
+            await ShowObjectWindow("GetFirewallRule");
         }
-
 
         public async void OnViewPsPortFilterCommand()
         {
-            var result = await fUtils.GetNetFirewallPortFilter(SelectedRule.DisplayName);
-            var newWin = new ObjectView();
-            var obj = ObjectViewModel.Create();
-            obj.SelectedPsObject = result[0];
-            newWin.DataContext = obj;
-            newWin.Show();
+            await ShowObjectWindow("GetNetFirewallPortFilter");
         }
 
         public async void OnViewPsAddressFilterCommand()
         {
-            var result = await fUtils.GetNetFirewallAddressFilter(SelectedRule.DisplayName);
-            var newWin = new ObjectView();
-            var obj = ObjectViewModel.Create();
-            obj.SelectedPsObject = result[0];
-            newWin.DataContext = obj;
-            newWin.Show();
+            await ShowObjectWindow("GetNetFirewallAddressFilter");
         }
 
         public async void OnViewPsApplicationFilterCommand()
         {
-            var result = await fUtils.GetNetFirewallApplicationFilter(SelectedRule.DisplayName);
-            var newWin = new ObjectView();
-            var obj = ObjectViewModel.Create();
-            obj.SelectedPsObject = result[0];
-            newWin.DataContext = obj;
-            newWin.Show();
+            await ShowObjectWindow("GetNetFirewallApplicationFilter");
         }
         public async void OnViewPsInterfaceTypeFilterCommand()
         {
-            var result = await fUtils.GetNetFirewallInterfaceTypeFilter(SelectedRule.DisplayName);
-            var newWin = new ObjectView();
-            var obj = ObjectViewModel.Create();
-            obj.SelectedPsObject = result[0];
-            newWin.DataContext = obj;
-            newWin.Show();
+            await ShowObjectWindow("GetNetFirewallInterfaceTypeFilter");
         }
         #endregion
     }

@@ -64,6 +64,11 @@ namespace FirewallUtilities
             Error = 4
         }
         [Flags]
+        public enum Profile
+        {
+            Any = 0, Domain = 1, Private = 2, Public = 4, NotApplicable = 8
+        }
+        [Flags]
         public enum Protocol
         {
             Any,
@@ -92,11 +97,34 @@ namespace FirewallUtilities
 
 
         [Flags]
-        public enum GpoBoolen
+        public enum GpoBoolean
         {
             False = 0,
             True = 1,
             NotConfigured = 2,
+        }
+        [Flags]
+        public enum IPsecThroughNAT
+        {
+            None = 0, Server = 1, Both = 2, NotConfigured = 4
+        }
+
+        [Flags]
+        public enum CRLCheck
+        {
+            None = 0, AttemptCrlCheck = 1, RequireCrlCheck = 2, NotConfigured = 4
+        }
+        public enum PacketQueuing
+        {
+            None = 0, Inbound = 1, Forward = 2, NotConfigured = 4
+        }
+        public enum TrafficExemption
+        {
+            None = 0, NeighborDiscovery = 1, Icmp = 2, RouterDiscovery = 4, Dhcp = 8, NotConfigured = 16
+        }
+        public enum KeyEncoding
+        {
+            UTF16 = 0, UTF8 = 1, NotConfigured = 2
         }
     }
 }

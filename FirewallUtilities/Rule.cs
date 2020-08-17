@@ -1,5 +1,6 @@
 ﻿#nullable enable
 using System;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
 namespace FirewallUtilities
@@ -26,6 +27,7 @@ namespace FirewallUtilities
         public Enumerations.PolicyStoreSourceType PolicyStoreSourceType { get; set; }
         public Enumerations.PrimaryStatus PrimaryStatus { get; set; } = Enumerations.PrimaryStatus.Unknown;
         public Enumerations.InterfaceType InterfaceType { get; set; } = Enumerations.InterfaceType.Any;
+        public Enumerations.Profile Profiles { get; set; } = Enumerations.Profile.Any;
 
         //=====
         public string Program { get; set; } = string.Empty;
@@ -46,31 +48,32 @@ namespace FirewallUtilities
             var addObj = await util.GetNetFirewallAddressFilter(this.DisplayName);
             var aObj = await util.GetNetFirewallApplicationFilter(this.DisplayName);
             var interObj = await util.GetNetFirewallInterfaceTypeFilter(this.DisplayName);
+
             if (pObj.Count > 0)
             {
-                this.LocalPort = (pObj[0].Properties["LocalPort"].Value != null)
+                LocalPort = (pObj[0].Properties["LocalPort"].Value != null)
                     ? string.Join(",", (string[])pObj[0].Properties["LocalPort"].Value)
                     : "Any";
-                this.RemotePort = (pObj[0].Properties["RemotePort"].Value != null)
+                RemotePort = (pObj[0].Properties["RemotePort"].Value != null)
                     ? string.Join(",", (string[])pObj[0].Properties["RemotePort"].Value)
                     : "Any";
-
                 if (pObj[0].Properties["Protocol"].Value != null)
-                    this.Protocol = Enum.Parse<Enumerations.Protocol>(pObj[0].Properties["Protocol"].Value.ToString());
-
+                    Protocol = (pObj[0].Properties["Protocol"].Value != null)
+                        ? Enum.Parse<Enumerations.Protocol>(pObj[0].Properties["Protocol"].Value.ToString())
+                        : Enumerations.Protocol.Any;
             }
             if (addObj.Count > 0)
             {
-                this.LocalAddress = (addObj[0].Properties["LocalAddress"].Value != null)
+                LocalAddress = (addObj[0].Properties["LocalAddress"].Value != null)
                     ? string.Join(",", (string[])addObj[0].Properties["LocalAddress"].Value)
                     : "Any";
-                this.RemoteAddress = (addObj[0].Properties["RemoteAddress"].Value != null)
+                RemoteAddress = (addObj[0].Properties["RemoteAddress"].Value != null)
                     ? string.Join(",", (string[])addObj[0].Properties["RemoteAddress"].Value)
                     : "Any";
             }
             if (aObj.Count > 0)
             {
-                this.Program = (aObj[0].Properties["AppPath"].Value != null)
+                Program = aObj[0].Properties["AppPath"].Value != null
                     ? aObj[0].Properties["AppPath"].Value.ToString()
                     : string.Empty;
             }
@@ -80,6 +83,7 @@ namespace FirewallUtilities
                 if (interObj[0].Properties["InterfaceType"].Value != null)
                     this.InterfaceType =
                         Enum.Parse<Enumerations.InterfaceType>(interObj[0].Properties["InterfaceType"].Value.ToString());
+
             }
         }
 

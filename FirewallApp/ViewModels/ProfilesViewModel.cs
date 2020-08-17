@@ -28,7 +28,7 @@ namespace FirewallApp.ViewModels
         protected ProfilesViewModel()
         {
             PowerShellScript = string.Empty;
-            fUtils = new FirewallUtilities.Utilities();
+            FirewallUtils = new FirewallUtilities.Utilities();
             GetProfiles();
         }
 
@@ -41,7 +41,7 @@ namespace FirewallApp.ViewModels
 
         #region Fields and Properties
 
-        public virtual FirewallUtilities.Utilities fUtils { get; set; }
+        public virtual FirewallUtilities.Utilities FirewallUtils { get; set; }
         public virtual ObservableCollection<Profile> ProfileCollection { get; set; }
         public virtual Profile SelectedProfile { get; set; }
         public virtual string PowerShellScript { get; set; }
@@ -53,28 +53,28 @@ namespace FirewallApp.ViewModels
 
         private async void GetProfiles()
         {
-            await fUtils.SetExecutionPolicy();
-            var resultObjs = await fUtils.GetFirewallProfile();
-            ProfileCollection = fUtils.CreateProfileCollection(resultObjs);
+            await FirewallUtils.SetExecutionPolicy();
+            var resultObjs = await FirewallUtils.GetFirewallProfile();
+            ProfileCollection = FirewallUtils.CreateProfileCollection(resultObjs);
         }
         public void OnBuildPsScriptCommand()
         {
-            PowerShellScript = fUtils.BuildProfileScript(ProfileCollection);
+            PowerShellScript = FirewallUtils.BuildProfileScript(ProfileCollection);
         }
 
         public async void OnRunPsScriptCommand()
         {
             IsEditEnabled = false;
-            await fUtils.SetExecutionPolicy();
+            await FirewallUtils.SetExecutionPolicy();
 
-            var result = await fUtils.ExecScriptTask(PowerShellScript);
+            var result = await FirewallUtils.ExecScriptTask(PowerShellScript, true);
             PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
             IsEditEnabled = true;
         }
 
         public async void OnViewProfileObjectsCommand()
         {
-            var result = await fUtils.GetFirewallProfile();
+            var result = await FirewallUtils.GetFirewallProfile();
             var newWin = new ObjectView();
             var obj = ObjectViewModel.Create();
             obj.SelectedPsObject = result[0];

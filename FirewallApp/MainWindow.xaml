@@ -7,8 +7,15 @@
     Title="MainWindow" WindowState="Maximized">
     <Grid>
         <TabControl>
-            <TabItem Header="Profiles"><Views:ProfilesView /></TabItem>
-            <TabItem Header="Rules"><Views:RulesView /></TabItem>
+            <TabItem Header="Profiles">
+                <Views:ProfilesView />
+            </TabItem>
+            <TabItem Header="Rules">
+                <Views:RulesView />
+            </TabItem>
+            <TabItem Header="Global Setting">
+                <Views:SettingView />
+            </TabItem>
         </TabControl>
     </Grid>
 </dx:ThemedWindow>

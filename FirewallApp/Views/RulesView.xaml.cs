@@ -22,5 +22,6 @@ namespace FirewallApp.Views
         {
             InitializeComponent();
         }
+
     }
 }

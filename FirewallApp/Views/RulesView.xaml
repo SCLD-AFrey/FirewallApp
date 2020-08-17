@@ -30,12 +30,13 @@
                          AutoGenerateColumns="None"
                          IsEnabled="{Binding IsEditEnabled}"
                          ItemsSource="{DXBinding 'RuleCollection', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         SelectedItem="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                         SelectedItem="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsFilterEnabled="True">
 
             <dxg:GridControl.View>
                 <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowConditionalFormattingMenu="True" AllowEditing="False"/>
             </dxg:GridControl.View>
 
+            <dxg:GridColumn FieldName="DisplayGroup" SortOrder="Ascending"></dxg:GridColumn>
             <dxg:GridColumn FieldName="DisplayName" SortOrder="Ascending"></dxg:GridColumn>
             <dxg:GridColumn FieldName="Direction"></dxg:GridColumn>
 
@@ -50,7 +51,7 @@
 
             <TextBlock Grid.Row="0" Text="{Binding PropertyHeader}"></TextBlock>
 
-            <dxprg:PropertyGridControl Grid.Row="1" 
+            <dxprg:PropertyGridControl Grid.Row="1" Name="RulePropertiesControl"
                                        SelectedObject="{DXBinding 'SelectedRule', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                                        ShowCategories="Hidden"
                                        IsEnabled="{Binding IsEditEnabled}" 
@@ -58,9 +59,10 @@
                                        ShowProperties="WithPropertyDefinitions" ShowToolPanel="False">
 
                 <dxprg:PropertyGridControl.PropertyDefinitions>
-                    <dxprg:PropertyDefinition Path="Name" Header="Name" IsReadOnly="True"  />
-                    <dxprg:PropertyDefinition Path="DisplayName" Header="Display Name" IsReadOnly="True"  />
-                    <dxprg:PropertyDefinition Path="DisplayGroup" Header="Display Group" IsReadOnly="True" />
+                    <dxprg:PropertyDefinition Path="Name" Header="Name" IsReadOnly="{Binding IsExistingRule}"  />
+                    <dxprg:PropertyDefinition Path="DisplayName" Header="Display Name" IsReadOnly="{Binding IsExistingRule}"  />
+                    <dxprg:PropertyDefinition Path="DisplayGroup" Header="Display Group" IsReadOnly="{Binding IsExistingRule}" />
+                    <dxprg:PropertyDefinition Path="Profile" Header="Profile" IsReadOnly="{Binding IsExistingRule}" />
                     <dxprg:PropertyDefinition Path="InstanceID" Header="Instance ID" IsReadOnly="True" />
                     <dxprg:PropertyDefinition Path="Description" Header="Description" />
                     <dxprg:PropertyDefinition Path="Action" Header="Action" />
