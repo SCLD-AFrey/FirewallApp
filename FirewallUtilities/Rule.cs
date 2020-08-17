@@ -1,6 +1,7 @@
 ﻿#nullable enable
 using System;
 using System.Collections.ObjectModel;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace FirewallUtilities
@@ -27,7 +28,7 @@ namespace FirewallUtilities
         public Enumerations.PolicyStoreSourceType PolicyStoreSourceType { get; set; }
         public Enumerations.PrimaryStatus PrimaryStatus { get; set; } = Enumerations.PrimaryStatus.Unknown;
         public Enumerations.InterfaceType InterfaceType { get; set; } = Enumerations.InterfaceType.Any;
-        public Enumerations.Profile Profiles { get; set; } = Enumerations.Profile.Any;
+        public Enumerations.Profile Profile { get; set; } = Enumerations.Profile.Any;
 
         //=====
         public string Program { get; set; } = string.Empty;
@@ -39,6 +40,48 @@ namespace FirewallUtilities
         public string RemotePort { get; set; } = "Any";
 
         public Enumerations.Protocol Protocol { get; set; }
+
+        public string BuildScript { get { return BuildRuleScript(); }
+        }
+
+
+        private string BuildRuleScript()
+        {
+            var pShellBld = new StringBuilder();
+            if (IsNew)
+            {
+                pShellBld.Append("New-NetFirewallRule -DisplayName '" + DisplayName + "'");
+            }
+            else
+            {
+                pShellBld.Append("Set-NetFirewallRule -DisplayName '" + DisplayName + "'");
+            }
+            pShellBld.Append(" ").Append("-Enabled " + (Enabled == Enumerations.Enabled.Enabled).ToString());
+            pShellBld.Append(" ").Append(($@"-Action '{Action.ToString()}'"));
+            if (Description.Length > 0)
+                pShellBld.Append(" ").Append($@"-Description '{Description}'");
+            if (DisplayGroup.Length > 0)
+                pShellBld.Append(" ").Append($@"-DisplayGroup {DisplayGroup}");
+
+            pShellBld.Append(" ").Append($@"-Direction {Direction}");
+            if (LocalPort.Length > 0)
+                pShellBld.Append(" ").Append($@"-LocalPort {LocalPort.ToString()}");
+            if (RemotePort.Length > 0)
+                pShellBld.Append(" ").Append($@"-RemotePort {RemotePort.ToString()}");
+            if (LocalAddress.Length > 0)
+                pShellBld.Append(" ").Append($@"-LocalAddress {LocalAddress.ToString()}");
+            if (RemoteAddress.Length > 0)
+                pShellBld.Append(" ").Append($@"-RemoteAddress {RemoteAddress.ToString()}");
+            pShellBld.Append(" ").Append($@"-Protocol {Protocol.ToString()}");
+            if (Program.Length > 0)
+                pShellBld.Append(" ").Append($@"-Program '{Program.ToString()}'");
+
+
+            pShellBld.Append(" ").Append(($@"-Profile '{Profile.ToString()}'"));
+
+            return pShellBld.ToString();
+        }
+
 
         public async Task GetAdditionalInfo()
         {

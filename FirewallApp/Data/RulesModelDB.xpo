@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f218dbee-1cef-4f65-ba29-922de883a979" namespace="FirewallApp.Data" dataBaseShemaInfo="H4sIAAAAAAAEAOVY227bOBB9L9B/MPKcsUmRFMnCcdEm3SLoBUGTLvaVl6EjrCwZkpzL3+8odtI4afeCqvbDIi/h4dDk0Zy5kNPXN4tydIVNW9TV0QEfs4PXs5cvpm9di+dd3bg5nlapHpFV1b66aYujg8uuW76aTK6vr8fXYlw380nGGJ/88enjebjEhYOiajtXBTx4WBX/edUB7ToaTS+cL7Htt7wb3yOPgHvos1vg7MuqxE91xHI6+QY+2L2remzWNSucTjaDh8mTou2Br8voOpwlV7ZktA0+2L5fFfE0zkISgf44CKUjSCkEuDxpyCyPxudcMEa/sTF+WHxcl6tF1W5R+CFMEz2H9eSMjrMs3W2PTCeP8C37v2P5X5k+ZquZjsopBpxpCxKtB5PlClzCIKPJnbHiGVtaPvkZwtiGplh2JMbdE8bMuJB8BB1kDtIzBKdlBiYXPjBUXDo/OOG1h9839Wq5e8ZJK8GTEiB8rkGyzIE1CSFE5BnykLgIQzM+3WSH05Pd85VSZcpYAzKTggJYcvA2kK6NzGzIOQ+aDc33TdiPmrXMg88ycqt1DGRIDkyKCFnGFXImmVODq3l9/Lh7sopHpVhklIpVz5gjGMkC5CIabrjj1pnhQ7fBPfnWCCly5SluBQYgRyfSsZSA6FAFqkJOZYP7Ns7xonF9q4BndVmE293zDikaFCKB5BpBCqYpdKMGpaIxKcdoEh+a91lTLFxze965btXuoSiZ5KxHhJQnCTJ6SlkoLJhAUleBlO7z4VN0h01yAS9ul3toPCg9aZcFAcZ6BVL3CTpIBj6S5mUWE4/P26yf9nI9b9xi92R9sEwGFyHYSP7lGMFmFgETtZqceYnMDk32Yx1c+SbGBts9KJqSFzWUmpwacypMInqwCXNQXts8maAlyqEZf8FF3eHeKHOWhPVaABpPyYs4grVcQ+5z9C5oQb3HL3HyWd10+/BwkjxR7KJKHqQyVJ4odIEwzSxXuRODl6e1h/fDVyYKU28cRMboXkhpCjxdESHpiMxpFEa7X5CwujrU5e7ZMs5dMNRcCW4ofmXfWEYUwGyImm4MhuHgTfSj5qMX9f+p+6hTUe6hCDsfPSMpg1GUqKjq5lSXtAQeMs4TNzqm+K/Jfg/dvNg8IJvxN5Np//6Ekb5AuANHkzX8+/qxanaCV+9uln1CH5+4zo2vMjbmh6PN9FE/GssxOxwdr8pu1eBRhauuceXh6GzlSUEf8Pai/hOrI09e5FrJqKlzptvSdHK/xd1+x6VrW2x7B/TPTffHp2Jy1mAqbjbnWkPnq7QF9WnpCp8artGntseuxdnXKly6at5fou7G60/zvTNM6csssemKPZ/tB8eYvscKG5LXcb1YYNW1G40+g7eMT7At5vTvbyT6pyu25+6WfV6VZa+at3jproq6IVEkR+6meHk68/LFdPLkVXP2FyGbBjb+FAAA" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="FirewallRulesAppDB" createdInVersion="20.1.4.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="true" lastModifiedInVersion="20.1.4.0" name="FirewallRulesApp" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="d5c78fda-23aa-4805-a15a-a8dedb23e93c">
+      <xpObject Id="cf3c3c31-357d-4433-a6f7-291d8b61300e" name="RuleModel" baseClass="XPObject" userFileName="RuleModel" designerFileName="RuleModel.Designer" className="RuleModel" virtualName="RuleModel">
+        <fields>
+          <generalXpObjectHasFields Id="ee52ac13-3e56-4e4a-8645-57ec725923a8">
+            <field Id="707d5a50-1079-4e9b-8265-afec4d86a893" name="DisplayName" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="64fb8c8e-17be-40aa-80d7-976ee62e2a9a">
+            <field Id="e28acfbd-7c46-4b0e-a742-863bc0e514ab" name="Description" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5ea29a6a-31aa-4cae-a8a1-6034c3d2cfb2">
+            <field Id="f7531f53-3b67-402a-98fe-cde12e1cf13c" name="DisplayGroup" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a2b66148-a3d3-4e4d-8b9e-a7e087bbc0a7">
+            <field Id="44525898-4243-4441-b9cb-88429c611c70" name="InstanceID" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d1f31696-3771-4f30-9770-d1aa38e65aa6">
+            <field Id="746cb227-49a0-4cfa-8fde-2215e1040a5b" name="Action" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="059206a3-4d56-4f1d-aafb-af47ba2725da">
+            <field Id="51d550d0-2957-491e-840c-63d8181a19a8" name="Enabled" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3384709e-2804-495a-9e1a-8f51f90cad57">
+            <field Id="834365b3-33ec-46cf-b944-eeae5c00ea52" name="Direction" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c7757713-fb45-4389-ad89-03ea31582740">
+            <field Id="cfd8e33f-417e-4307-88d7-55d88f6ed8f1" name="EdgeTraversalPolicy" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5b7eef27-3795-4a5d-b905-cc6e6b31b4a7">
+            <field Id="e8fa9bee-f6f4-4db1-be39-8c2955c91eb6" name="PrimaryStatus" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="25bb874d-6fdf-47b2-bb6f-1a5f2b7e1b58">
+            <field Id="5e17a2c3-89b5-47cb-8c40-bd65b42df1de" name="InterfaceType" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f7cfdaaf-b5bb-4537-af48-f0ba5d8a2325">
+            <field Id="bc904cad-c9d4-41ed-929e-efc3c10b4e09" name="Program" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3cadec47-6a5f-4f27-b912-d404c58c2129">
+            <field Id="8340797b-8d60-43db-9fe6-5b796f8c74e4" name="LocalAddress" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1efef4e1-f873-4efe-8bfc-887f5885b8b5">
+            <field Id="10f39b73-e8bf-48c7-9917-6b6ebac73c61" name="RemoteAddress" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ff85571d-b84f-4406-aaa7-67d178e6a128">
+            <field Id="83f41fb5-e5fb-458f-b65b-1fb709156a32" name="LocalPort" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="09f5dca0-e303-4f1b-b02e-421ec1d13249">
+            <field Id="4fb4eb8a-d00d-4d65-b357-f7de0a7e387a" name="RemotePort" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a613bca5-c92b-40ec-a15d-d3da2969bc84">
+            <field Id="011ac80c-3180-44fa-8de3-09cd7f1380e0" name="Protocol" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d04660cc-e076-4b9f-bfc7-0638e239b302">
+            <field Id="abdb04d6-8517-42d6-9274-1c211f187dfd" name="Profile" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

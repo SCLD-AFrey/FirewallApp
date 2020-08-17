@@ -76,7 +76,7 @@ namespace FirewallApp.ViewModels
         public void OnBuildPsScriptCommand()
         {
             IsEditEnabled = false;
-            PowerShellScript = FirewallUtils.BuildRuleScript(SelectedRule);
+            PowerShellScript = SelectedRule.BuildScript;
             IsEditEnabled = true;
         }
 

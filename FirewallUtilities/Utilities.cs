@@ -102,39 +102,6 @@ namespace FirewallUtilities
 
             return retObjs;
         }
-        public string BuildRuleScript(Rule pRule)
-        {
-            var pShellBld = new StringBuilder();
-            if (pRule.IsNew)
-            {
-                pShellBld.Append("New-NetFirewallRule -DisplayName '" + pRule.DisplayName + "'");
-            }
-            else
-            {
-                pShellBld.Append("Set-NetFirewallRule -DisplayName '" + pRule.DisplayName + "'");
-            }
-            pShellBld.Append(" ").Append("-Enabled " + (pRule.Enabled == Enumerations.Enabled.Enabled).ToString());
-            pShellBld.Append(" ").Append(($@"-Action '{pRule.Action.ToString()}'"));
-            if (pRule.Description.Length > 0)
-                pShellBld.Append(" ").Append($@"-Description '{pRule.Description}'" );
-            if (pRule.DisplayGroup.Length > 0)
-                pShellBld.Append(" ").Append($@"-DisplayGroup {pRule.DisplayGroup}");
-
-            pShellBld.Append(" ").Append($@"-Direction {pRule.Direction}");
-            if (pRule.LocalPort.Length > 0)
-                pShellBld.Append(" ").Append($@"-LocalPort {pRule.LocalPort.ToString()}");
-            if (pRule.RemotePort.Length > 0)
-                pShellBld.Append(" ").Append($@"-RemotePort {pRule.RemotePort.ToString()}");
-            if (pRule.LocalAddress.Length > 0)
-                pShellBld.Append(" ").Append($@"-LocalAddress {pRule.LocalAddress.ToString()}");
-            if (pRule.RemoteAddress.Length > 0)
-                pShellBld.Append(" ").Append($@"-RemoteAddress {pRule.RemoteAddress.ToString()}");
-                pShellBld.Append(" ").Append($@"-Protocol {pRule.Protocol.ToString()}");
-            if (pRule.Program.Length > 0)
-                pShellBld.Append(" ").Append($@"-Program '{pRule.Program.ToString()}'");
-
-            return pShellBld.ToString();
-        }
 
         public async Task<Rule> ConvertToRule(PSObject obj)
         {
@@ -169,7 +136,7 @@ namespace FirewallUtilities
                 Enabled = (Enumerations.Enabled) Int32.Parse(obj.Properties["Enabled"].Value.ToString()),
                 PolicyStoreSourceType = (Enumerations.PolicyStoreSourceType) Int32.Parse(obj.Properties["PolicyStoreSourceType"].Value.ToString()),
                 PrimaryStatus = (Enumerations.PrimaryStatus) Int32.Parse(obj.Properties["PrimaryStatus"].Value.ToString()),
-                Profiles = (Enumerations.Profile) Int32.Parse(obj.Properties["Profiles"].Value.ToString())
+                Profile = (Enumerations.Profile) Int32.Parse(obj.Properties["Profiles"].Value.ToString())
             };
 
             if (p_GetadditonalInfo)

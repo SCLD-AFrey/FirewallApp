@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\App.xaml
-692337851
+7-783364112
 
-13886630260
+19691410090
 3101469197843
-MainWindow.xaml;Views\MainView.xaml;Views\ObjectView.xaml;Views\ProfilesView.xaml;Views\RulesView.xaml;Views\SettingView.xaml;
+MainWindow.xaml;Views\MainView.xaml;Views\ObjectView.xaml;Views\ProfilesView.xaml;Views\RulesView.xaml;Views\SettingView.xaml;Views\ToolsView.xaml;
 
 True
 

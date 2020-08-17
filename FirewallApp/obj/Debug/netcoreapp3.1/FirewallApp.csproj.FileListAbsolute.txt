@@ -441,3 +441,5 @@ C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debu
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.dll
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.pdb
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.genruntimeconfig.cache
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ToolsView.g.cs
+C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ToolsView.baml

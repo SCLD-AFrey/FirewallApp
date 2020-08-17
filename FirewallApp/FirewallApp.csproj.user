@@ -7,10 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Data\RulesModelDBCode\ServiceCollectionExtensions.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Views\ObjectView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\SettingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ToolsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -25,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SettingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ToolsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
