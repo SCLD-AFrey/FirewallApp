@@ -9,6 +9,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
 
-        <dx:SimpleButton Grid.Row="1" Grid.Column="2" Content="Fix Rule" Command="{Binding InitializeRuleModelsCommand}"></dx:SimpleButton>
+        <dx:SimpleButton Grid.Row="1" Grid.Column="2" Content="LOAD RULES" Command="{Binding InitializeRuleModelsCommand}"></dx:SimpleButton>
     </Grid>
 </UserControl>

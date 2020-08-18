@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallApp", "FirewallApp\FirewallApp.csproj", "{238ECA2D-1329-478B-9CDF-432966981F44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirewallUtilities", "FirewallUtilities\FirewallUtilities.csproj", "{FB5409C9-A179-4D1E-A4D5-4B9D1A720CD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallUtilties", "..\FirewallUtilties\FirewallUtilties\FirewallUtilties.csproj", "{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{238ECA2D-1329-478B-9CDF-432966981F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{238ECA2D-1329-478B-9CDF-432966981F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{238ECA2D-1329-478B-9CDF-432966981F44}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB5409C9-A179-4D1E-A4D5-4B9D1A720CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB5409C9-A179-4D1E-A4D5-4B9D1A720CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB5409C9-A179-4D1E-A4D5-4B9D1A720CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB5409C9-A179-4D1E-A4D5-4B9D1A720CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

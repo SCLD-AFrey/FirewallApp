@@ -40,7 +40,6 @@ namespace FirewallApp.ViewModels
 
         protected MainViewModel()
         {
-            FirewallUtils = new FirewallUtilities.Utilities();
             uow = new UnitOfWork();
             GetRules();
         }
@@ -55,7 +54,6 @@ namespace FirewallApp.ViewModels
         #region Fields and Properties
 
         public virtual UnitOfWork uow { get; set; }
-        public virtual Utilities FirewallUtils { get; set; }
         public virtual ObservableCollection<Rule> RuleCollection { get; set; }
         public virtual XPCollection<RuleModel> RuleModelCollection { get; set; }
         public virtual Rule SelectedRule { get; set; }
@@ -72,10 +70,10 @@ namespace FirewallApp.ViewModels
 
         private async Task GetRules()
         {
-            await FirewallUtils.SetExecutionPolicy();
+            await Utilities.SetExecutionPolicy();
             //await OnInitializeDatabaseRulesCommand();
-            var resultObjs = await FirewallUtils.GetFirewallRule();
-            RuleCollection = await FirewallUtils.CreateRuleCollection(resultObjs);
+            var resultObjs = await Utilities.GetFirewallRule();
+            RuleCollection = await Utilities.CreateRuleCollection(resultObjs);
             RuleModelCollection = new XPCollection<RuleModel>(uow);
         }
 
@@ -149,7 +147,7 @@ namespace FirewallApp.ViewModels
         public async Task OnInitializeDatabaseRulesCommand()
         {
             XPCollection<RuleModel> _rules = new XPCollection<RuleModel>(uow);
-            var RulesMain = await FirewallUtils.GetFirewallRule();
+            var RulesMain = await Utilities.GetFirewallRule();
 
 
 
@@ -157,7 +155,7 @@ namespace FirewallApp.ViewModels
             foreach (var psObj in RulesMain)
             {
                 var r = new RuleModel(uow);
-                var _rule = await FirewallUtils.ConvertToRule(psObj);
+                var _rule = await Utilities.ConvertToRule(psObj);
                 XPCollection<RuleModel> check = new XPCollection<RuleModel>(uow, CriteriaOperator.Parse($@"DisplayName = '{_rule.DisplayName}'"));
                 if (check.Count == 0 && _rule.DisplayGroup == "")
                 {

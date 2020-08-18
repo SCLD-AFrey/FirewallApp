@@ -9151,8 +9151,8 @@
     },
     "FirewallUtilities/1.0.0": {
       "type": "project",
-      "path": "../FirewallUtilities/FirewallUtilities.csproj",
-      "msbuildProject": "../FirewallUtilities/FirewallUtilities.csproj"
+      "path": "../../FirewallUtilties/FirewallUtilties/FirewallUtilties.csproj",
+      "msbuildProject": "../../FirewallUtilties/FirewallUtilties/FirewallUtilties.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9201,8 +9201,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallUtilities\\FirewallUtilities.csproj": {
-              "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallApp\\FirewallUtilities\\FirewallUtilities.csproj"
+            "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj": {
+              "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj"
             }
           }
         }

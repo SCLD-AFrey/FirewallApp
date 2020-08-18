@@ -68,9 +68,9 @@ namespace FirewallApp.ViewModels
         private async void GetRules()
         {
             IsEditEnabled = false;
-            await FirewallUtils.SetExecutionPolicy();
-            var resultObjs = await FirewallUtils.GetFirewallRule();
-            RuleCollection = await FirewallUtils.CreateRuleCollection(resultObjs);
+            await Utilities.SetExecutionPolicy();
+            var resultObjs = await Utilities.GetFirewallRule();
+            RuleCollection = await Utilities.CreateRuleCollection(resultObjs);
             IsEditEnabled = true;
         }
         public void OnBuildPsScriptCommand()
@@ -83,7 +83,7 @@ namespace FirewallApp.ViewModels
         public async void OnRunPsScriptCommand()
         {
             IsEditEnabled = false;
-            await FirewallUtils.SetExecutionPolicy();
+            await Utilities.SetExecutionPolicy();
 
 
             var check = RuleCollection.Where(x => x.DisplayName == SelectedRule.DisplayName);
@@ -91,8 +91,8 @@ namespace FirewallApp.ViewModels
 
             if (intCheck == 0)
             {
-                var result = await FirewallUtils.ExecScriptTask(PowerShellScript, true);
-                PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
+                var result = await SelectedRule.Commit(true);
+                PowerShellScript = "Script Completed - " + result.Item1.ToString();
                 GetRules();
             }
             else
@@ -131,19 +131,19 @@ namespace FirewallApp.ViewModels
             switch (psObjType)
             {
                 case "GetFirewallRule":
-                    resultObjs = await FirewallUtils.GetFirewallRule(SelectedRule.DisplayName);
+                    resultObjs = await Utilities.GetFirewallRule(SelectedRule.DisplayName);
                     break;
                 case "GetNetFirewallPortFilter":
-                    resultObjs = await FirewallUtils.GetNetFirewallPortFilter(SelectedRule.DisplayName);
+                    resultObjs = await Utilities.GetNetFirewallPortFilter(SelectedRule.DisplayName);
                     break;
                 case "GetNetFirewallAddressFilter":
-                    resultObjs = await FirewallUtils.GetNetFirewallAddressFilter(SelectedRule.DisplayName);
+                    resultObjs = await Utilities.GetNetFirewallAddressFilter(SelectedRule.DisplayName);
                     break;
                 case "GetNetFirewallApplicationFilter":
-                    resultObjs = await FirewallUtils.GetNetFirewallApplicationFilter(SelectedRule.DisplayName);
+                    resultObjs = await Utilities.GetNetFirewallApplicationFilter(SelectedRule.DisplayName);
                     break;
                 case "GetNetFirewallInterfaceTypeFilter":
-                    resultObjs = await FirewallUtils.GetNetFirewallInterfaceTypeFilter(SelectedRule.DisplayName);
+                    resultObjs = await Utilities.GetNetFirewallInterfaceTypeFilter(SelectedRule.DisplayName);
                     break;
             }
 

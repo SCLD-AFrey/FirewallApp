@@ -4,7 +4,6 @@ C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debu
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ObjectView.g.cs
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ProfilesView.g.cs
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\RulesView.g.cs
-C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\SettingView.g.cs
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp_MarkupCompile.cache
@@ -432,7 +431,6 @@ C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debu
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ObjectView.baml
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\ProfilesView.baml
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\RulesView.baml
-C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\Views\SettingView.baml
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.g.resources
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.csproj.CoreCompileInputs.cache
 C:\Users\afrey\Documents\Development\SCLD-AFrey\FirewallApp\FirewallApp\obj\Debug\netcoreapp3.1\FirewallApp.AssemblyInfoInputs.cache

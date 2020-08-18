@@ -47,12 +47,12 @@ namespace FirewallApp.ViewModels
 
         public async void OnInitializeRuleModelsCommand()
         {
-            await FirewallUtils.SetExecutionPolicy();
-            var RulesObjs = await FirewallUtils.GetFirewallRule();
+            await Utilities.SetExecutionPolicy();
+            var RulesObjs = await Utilities.GetFirewallRule();
 
             foreach (var ruleObj in RulesObjs)
             {
-                var rule = FirewallUtils.ConvertToRule(ruleObj, false);
+                var rule = Utilities.ConvertToRule(ruleObj, false);
 
             }
         }

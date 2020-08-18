@@ -26,9 +26,6 @@
             <TabItem Header="Rules">
                 <Views:RulesView />
             </TabItem>
-            <TabItem Header="Global Setting">
-                <Views:SettingView />
-            </TabItem>
         </TabControl>
     </Grid>
 </dx:ThemedWindow>

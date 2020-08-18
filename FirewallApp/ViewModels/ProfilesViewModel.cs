@@ -53,28 +53,35 @@ namespace FirewallApp.ViewModels
 
         private async void GetProfiles()
         {
-            await FirewallUtils.SetExecutionPolicy();
-            var resultObjs = await FirewallUtils.GetFirewallProfile();
-            ProfileCollection = FirewallUtils.CreateProfileCollection(resultObjs);
+            await Utilities.SetExecutionPolicy();
+            var resultObjs = await Utilities.GetFirewallProfile();
+            ProfileCollection = Utilities.CreateProfileCollection(resultObjs);
         }
         public void OnBuildPsScriptCommand()
         {
-            PowerShellScript = FirewallUtils.BuildProfileScript(ProfileCollection);
+            PowerShellScript  = String.Empty;
+            foreach (var profile in ProfileCollection)
+            {
+                PowerShellScript += profile.BuildScript;
+            }
         }
 
         public async void OnRunPsScriptCommand()
         {
             IsEditEnabled = false;
-            await FirewallUtils.SetExecutionPolicy();
+            PowerShellScript = String.Empty;
+            foreach (var profile in ProfileCollection)
+            {
+                var result = await profile.Commit(true);
+                PowerShellScript += $@"'{profile.Name}' Script Completed - " + result.Item1.ToString();
+            }
 
-            var result = await FirewallUtils.ExecScriptTask(PowerShellScript, true);
-            PowerShellScript = "Script Completed - " + result.IsSuccess.ToString();
             IsEditEnabled = true;
         }
 
         public async void OnViewProfileObjectsCommand()
         {
-            var result = await FirewallUtils.GetFirewallProfile();
+            var result = await Utilities.GetFirewallProfile();
             var newWin = new ObjectView();
             var obj = ObjectViewModel.Create();
             obj.SelectedPsObject = result[0];
