@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallApp", "FirewallApp\FirewallApp.csproj", "{238ECA2D-1329-478B-9CDF-432966981F44}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallUtilties", "..\FirewallUtilties\FirewallUtilties\FirewallUtilties.csproj", "{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirewallUtilities", "..\FirewallUtilties\FirewallUtilties\FirewallUtilities.csproj", "{7BF4A30D-02FA-4A33-A284-F529D2AAE26C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

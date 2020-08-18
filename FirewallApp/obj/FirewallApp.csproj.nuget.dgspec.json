@@ -39,8 +39,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj": {
-                "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj"
+              "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilities.csproj": {
+                "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilities.csproj"
               }
             }
           }
@@ -85,12 +85,12 @@
         }
       }
     },
-    "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj": {
+    "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj",
+        "projectUniqueName": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilities.csproj",
         "projectName": "FirewallUtilities",
-        "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilties.csproj",
+        "projectPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\FirewallUtilities.csproj",
         "packagesPath": "C:\\Users\\afrey\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\afrey\\Documents\\Development\\SCLD-AFrey\\FirewallUtilties\\FirewallUtilties\\obj\\",
         "projectStyle": "PackageReference",
