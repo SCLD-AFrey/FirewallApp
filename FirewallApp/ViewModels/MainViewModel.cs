@@ -28,11 +28,9 @@ namespace FirewallApp.ViewModels
             void IMetadataProvider<MainViewModel>.BuildMetadata
                 (MetadataBuilder<MainViewModel> p_builder)
             {
-
                 p_builder.CommandFromMethod(p_x => p_x.OnInitializeDatabaseRulesCommand()).CommandName("InitializeDatabaseRulesCommand");
                 p_builder.CommandFromMethod(p_x => p_x.OnCreateRuleFixScriptCommand()).CommandName("CreateRuleFixScriptCommand");
                 p_builder.Property(p_x => p_x.SelectedRuleModel).OnPropertyChangedCall(p_x => p_x.SelectedRuleModelChanged());
-                
             }
         }
 
@@ -71,7 +69,6 @@ namespace FirewallApp.ViewModels
         private async Task GetRules()
         {
             await Utilities.SetExecutionPolicy();
-            //await OnInitializeDatabaseRulesCommand();
             var resultObjs = await Utilities.GetFirewallRule();
             RuleCollection = await Utilities.CreateRuleCollection(resultObjs);
             RuleModelCollection = new XPCollection<RuleModel>(uow);
@@ -91,7 +88,7 @@ namespace FirewallApp.ViewModels
                     _t = _rule.First();
                     _t.IsNew = false;
                     await _t.GetAdditionalInfo();
-                } else if (_rule.Count() == 0)
+                } else if (!_rule.Any())
                 {
                     _t = new Rule()
                     {
@@ -123,7 +120,6 @@ namespace FirewallApp.ViewModels
 
         public void OnCreateRuleFixScriptCommand()
         {
-
             //SelectedRule.DisplayName = SelectedRuleModel.DisplayName;
             SelectedRule.Description = SelectedRuleModel.Description;
             SelectedRule.DisplayGroup = SelectedRuleModel.DisplayGroup;
@@ -141,16 +137,12 @@ namespace FirewallApp.ViewModels
             SelectedRule.Protocol = Enum.Parse<Enumerations.Protocol>(SelectedRuleModel.Protocol);
 
             PowerShellScript = SelectedRule.BuildScript;
-
         }
 
         public async Task OnInitializeDatabaseRulesCommand()
         {
             XPCollection<RuleModel> _rules = new XPCollection<RuleModel>(uow);
             var RulesMain = await Utilities.GetFirewallRule();
-
-
-
 
             foreach (var psObj in RulesMain)
             {

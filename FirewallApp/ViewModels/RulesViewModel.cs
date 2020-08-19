@@ -125,7 +125,31 @@ namespace FirewallApp.ViewModels
             IsEditEnabled = true;
         }
 
-        public async Task ShowObjectWindow(string psObjType)
+        public async void OnViewPsNetFirewallRuleCommand()
+        {
+            await ShowObjectWindow("GetFirewallRule");
+        }
+
+        public async void OnViewPsPortFilterCommand()
+        {
+            await ShowObjectWindow("GetNetFirewallPortFilter");
+        }
+
+        public async void OnViewPsAddressFilterCommand()
+        {
+            await ShowObjectWindow("GetNetFirewallAddressFilter");
+        }
+
+        public async void OnViewPsApplicationFilterCommand()
+        {
+            await ShowObjectWindow("GetNetFirewallApplicationFilter");
+        }
+        public async void OnViewPsInterfaceTypeFilterCommand()
+        {
+            await ShowObjectWindow("GetNetFirewallInterfaceTypeFilter");
+        }
+
+        private async Task ShowObjectWindow(string psObjType)
         {
             PSDataCollection<PSObject> resultObjs = new PSDataCollection<PSObject>();
             switch (psObjType)
@@ -158,30 +182,6 @@ namespace FirewallApp.ViewModels
             newWin.DataContext = obj;
             newWin.Title = $@"Object Properties: {SelectedRule.DisplayName} {resultObjs[0].Properties["CimClass"].Value.ToString().Split(':')[1]}";
             newWin.Show();
-        }
-
-        public async void OnViewPsNetFirewallRuleCommand()
-        {
-            await ShowObjectWindow("GetFirewallRule");
-        }
-
-        public async void OnViewPsPortFilterCommand()
-        {
-            await ShowObjectWindow("GetNetFirewallPortFilter");
-        }
-
-        public async void OnViewPsAddressFilterCommand()
-        {
-            await ShowObjectWindow("GetNetFirewallAddressFilter");
-        }
-
-        public async void OnViewPsApplicationFilterCommand()
-        {
-            await ShowObjectWindow("GetNetFirewallApplicationFilter");
-        }
-        public async void OnViewPsInterfaceTypeFilterCommand()
-        {
-            await ShowObjectWindow("GetNetFirewallInterfaceTypeFilter");
         }
         #endregion
     }
