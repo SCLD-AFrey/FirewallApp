@@ -33,6 +33,7 @@ namespace FirewallApp.Data
             set { SetPropertyValue<string>(nameof(Description), ref fDescription, value); }
         }
         string fDisplayGroup;
+        [Size(SizeAttribute.Unlimited)]
         public string DisplayGroup
         {
             get { return fDisplayGroup; }

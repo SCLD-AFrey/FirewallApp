@@ -11,7 +11,7 @@
             <field Id="e28acfbd-7c46-4b0e-a742-863bc0e514ab" name="Description" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="5ea29a6a-31aa-4cae-a8a1-6034c3d2cfb2">
-            <field Id="f7531f53-3b67-402a-98fe-cde12e1cf13c" name="DisplayGroup" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+            <field Id="f7531f53-3b67-402a-98fe-cde12e1cf13c" name="DisplayGroup" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
           </generalXpObjectHasFields>
           <generalXpObjectHasFields Id="a2b66148-a3d3-4e4d-8b9e-a7e087bbc0a7">
             <field Id="44525898-4243-4441-b9cb-88429c611c70" name="InstanceID" virtualColumnType="String" delayedUpdateModifiedOnly="false" />

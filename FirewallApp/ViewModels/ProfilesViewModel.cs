@@ -53,7 +53,6 @@ namespace FirewallApp.ViewModels
 
         private async void GetProfiles()
         {
-            await Utilities.SetExecutionPolicy();
             var resultObjs = await Utilities.GetFirewallProfile();
             ProfileCollection = Utilities.CreateProfileCollection(resultObjs);
         }

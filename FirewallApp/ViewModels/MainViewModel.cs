@@ -68,7 +68,6 @@ namespace FirewallApp.ViewModels
 
         private async Task GetRules()
         {
-            await Utilities.SetExecutionPolicy();
             var resultObjs = await Utilities.GetFirewallRule();
             RuleCollection = await Utilities.CreateRuleCollection(resultObjs);
             RuleModelCollection = new XPCollection<RuleModel>(uow);

@@ -68,7 +68,6 @@ namespace FirewallApp.ViewModels
         private async void GetRules()
         {
             IsEditEnabled = false;
-            await Utilities.SetExecutionPolicy();
             var resultObjs = await Utilities.GetFirewallRule();
             RuleCollection = await Utilities.CreateRuleCollection(resultObjs);
             IsEditEnabled = true;
@@ -83,7 +82,6 @@ namespace FirewallApp.ViewModels
         public async void OnRunPsScriptCommand()
         {
             IsEditEnabled = false;
-            await Utilities.SetExecutionPolicy();
 
 
             var check = RuleCollection.Where(x => x.DisplayName == SelectedRule.DisplayName);

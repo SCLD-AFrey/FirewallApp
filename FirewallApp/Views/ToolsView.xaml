@@ -6,9 +6,17 @@
              xmlns:local="clr-namespace:FirewallApp.Views"
              xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" 
+             xmlns:ViewModels="clr-namespace:FirewallApp.ViewModels" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:ToolsViewModel}">
     <Grid>
+        <StackPanel Orientation="Horizontal">
+            <dx:SimpleButton Grid.Row="1" Grid.Column="2" Content="LOAD RULES" Command="{Binding InitializeRuleModelsCommand}"></dx:SimpleButton>
+            <dxe:CheckEdit IsChecked="{Binding IsOverwriteRules, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="Overwrite Existing" />
+        </StackPanel>
 
-        <dx:SimpleButton Grid.Row="1" Grid.Column="2" Content="LOAD RULES" Command="{Binding InitializeRuleModelsCommand}"></dx:SimpleButton>
+
+
     </Grid>
 </UserControl>
